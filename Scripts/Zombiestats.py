@@ -10,8 +10,7 @@ maxpoints = int(sys.argv[2])
 
 ## catching character traits ##
 
-handeln = ["beißen","schlagen","klettern","rennen"]
-wissen = []
+handeln = ["beissen","schlagen","klettern","rennen"]
 interagieren = ["kreischen"]
 
 def con_sum(n, total):
@@ -37,19 +36,18 @@ def totalpoints(ary):
 traitpoints = con_sum(5,maxpoints)
 hp = traitpoints[:-1]
 ip = [traitpoints[-1]]
-wp = []
 
 ## writing to file ##
 
 with open("{}.tex".format(outf_name),"w") as f:
-    f.write("\\begin{tabular}{cccccc}\n")
+    f.write("\\begin{tabular}{cccc}\n")
     f.write("\\toprule\n")
-    f.write("Handeln & & Wissen & & Interagieren & \\\\\n")
-    f.write(str(int(totalpoints(hp)))+" & & "+str(0)+" & & "+str(int(totalpoints(ip)))+"\\\\\n")
+    f.write("Handeln &  & Interagieren & \\\\\n")
+    f.write(str(int(totalpoints(hp)))+" &  & "+str(int(totalpoints(ip)))+"\\\\\n")
     f.write("\midrule\n")
     for j in range(max(len(handeln),len(interagieren))):
-        trait1, trait2, trait3 = str(printelem(handeln,j)),str(printelem(wissen,j)),str(printelem(interagieren,j))
-        point1, point2, point3 = str(printelem(hp,j)),str(printelem(wp,j)),str(printelem(ip,j))
-        f.write(trait1+" & "+point1+" & "+trait2+" & "+point2+" & "+trait3+" & "+point3+" \\\\\n")
+        trait1, trait3 = str(printelem(handeln,j)),str(printelem(interagieren,j))
+        point1, point3 = str(printelem(hp,j)),str(printelem(ip,j))
+        f.write(trait1+" & "+point1+" & "+trait3+" & "+point3+" \\\\\n")
     f.write(r"\bottomrule\n")
     f.write(r"\end{tabular}")
