@@ -1,0 +1,34 @@
+\documentclass{include/protokollclass}
+
+\usepackage{pdfpages}
+\usepackage{booktabs}
+\usepackage[ngerman]{babel}
+
+%% ---------------------------------
+%% |    Commands for neat stuff    |
+%% ---------------------------------
+
+\newcommand{\gqm}[1]{\glqq#1\grqq}
+
+\title{TITLE GOES HERE}
+\author{AUTHORS GO HERE}
+
+%% --------------------
+%% |    Main Story    |
+%% --------------------
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\chapter{Informationen}
+\input{./Chapters/Informationen.tex}
+
+\chapter{EXAMPLE CHAPTER 1}
+\input{./Chapters/EXAMPLE CHAPTER 1.tex}
+
+\chapter{EXAMPLE CHAPTER 2}
+\input{./Chapters/EXAMPLE CHAPTER 2.tex}
+
+\end{document}
