@@ -1,11 +1,7 @@
 \documentclass{include/protokollclass}
 
 \usepackage{pdfpages}
-%\usepackage{graphicx}
-\usepackage{float}
-\usepackage{amsmath}
 \usepackage{booktabs}
-\usepackage{siunitx}
 \usepackage[ngerman]{babel}
 
 %% ---------------------------------
@@ -13,9 +9,12 @@
 %% ---------------------------------
 
 \newcommand{\gqm}[1]{\glqq#1\grqq}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newcommand{\purple}[1]{\textcolor{purple}{#1}}
 
-\title{Die Unberührbaren}
-\author{Shorty, Quizznor}
+\title{Der Schwarze Tod}
+\author{DerHauge\thanks{Rahmenhandlung}, Quizznor\thanks{Typesetting}}
 
 %% --------------------
 %% |    Main Story    |
@@ -27,12 +26,9 @@
 \tableofcontents
 
 \chapter{Informationen}
-\input{./Chapters/Informationen.tex}
+\input{./Informationen/Informationen.tex}
 
-\chapter{Trekov}
-\input{./Chapters/Trekov.tex}
-
-\chapter{Bunker}
-\input{./Chapters/Bunker.tex}
+\chapter{Story}
+\input{./Story/Story.tex}
 
 \end{document}
