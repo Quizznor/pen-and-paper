@@ -2,8 +2,9 @@ import sys
 
 ## shell ##
 
-assert len(sys.argv)==2, "Usage: <maketabs.py> <outf_name>"
-outf_name = "../tab/{}".format(sys.argv[1])
+assert len(sys.argv)==2, "Usage: <maketabs.py> <total points> <outf_name>"
+tp = int(sys.argv[1])
+outf_name = "../tab/{}".format(sys.argv[2])
 
 ## catching character traits ##
 
@@ -14,7 +15,7 @@ wp = []
 interagieren = []
 ip = []
 
-print("\nEigenschaften: Handeln")
+print("\nEigenschaften: Handeln, press 'q' for next")
 while True:
     tr= input("Trait: ")
     if tr=="q":
@@ -23,8 +24,10 @@ while True:
         handeln.append(tr)
         points = input("Points: ")
         hp.append(points)
+        tp-=points
+        print("{} points total remaining".format(tp))
 
-print("\nEigenschaften: Wissen")
+print("\nEigenschaften: Wissen, press 'q' for next")
 while True:
     tr = input("Trait: ")
     if tr=="q":
@@ -34,7 +37,7 @@ while True:
         points = input("Points: ")
         wp.append(points)
 
-print("\nEigenschaften: Interagieren")
+print("\nEigenschaften: Interagieren, press 'q' to finish")
 while True:
     tr= input("Trait: ")
     if tr =="q":
