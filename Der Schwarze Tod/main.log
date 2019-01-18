@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.12.19)  17 JAN 2019 11:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.12.19)  18 JAN 2019 14:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1354,7 +1354,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 28.
 
  [2
 
-]
+] [3]
 chapter 1.
 (./Informationen/Informationen.tex (./Informationen/chap/General.tex (./Informationen/chap/Pestilenz.tex)
 Overfull \hbox (6.64395pt too wide) in paragraph at lines 1--14
@@ -1368,7 +1368,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1--14
 
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 18.
-[3
+[4
 
 ]) (./Informationen/chap/Characters.tex
 
@@ -1383,43 +1383,21 @@ Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 14.
+(scrbook)              This could result in several error messages on input line 16.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 19.
+(scrbook)              This could result in several error messages on input line 21.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 30.
-
-[4]
-
-Class scrbook Warning: incompatible usage of \@ssect detected.
-(scrbook)              You've used the KOMA-Script implementation of \@ssect
-(scrbook)              from within a non compatible caller, that does not
-(scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 39.
-
-
-Class scrbook Warning: incompatible usage of \@ssect detected.
-(scrbook)              You've used the KOMA-Script implementation of \@ssect
-(scrbook)              from within a non compatible caller, that does not
-(scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 55.
-
-
-Class scrbook Warning: incompatible usage of \@ssect detected.
-(scrbook)              You've used the KOMA-Script implementation of \@ssect
-(scrbook)              from within a non compatible caller, that does not
-(scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 64.
+(scrbook)              This could result in several error messages on input line 32.
 
 [5]
 
@@ -1427,28 +1405,21 @@ Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 75.
+(scrbook)              This could result in several error messages on input line 41.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 86.
+(scrbook)              This could result in several error messages on input line 57.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 97.
-
-
-Class scrbook Warning: incompatible usage of \@ssect detected.
-(scrbook)              You've used the KOMA-Script implementation of \@ssect
-(scrbook)              from within a non compatible caller, that does not
-(scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 104.
+(scrbook)              This could result in several error messages on input line 66.
 
 [6]
 
@@ -1456,35 +1427,28 @@ Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 119.
+(scrbook)              This could result in several error messages on input line 77.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 124.
+(scrbook)              This could result in several error messages on input line 88.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 129.
+(scrbook)              This could result in several error messages on input line 99.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 134.
-
-
-Class scrbook Warning: incompatible usage of \@ssect detected.
-(scrbook)              You've used the KOMA-Script implementation of \@ssect
-(scrbook)              from within a non compatible caller, that does not
-(scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 139.
+(scrbook)              This could result in several error messages on input line 106.
 
 [7]
 
@@ -1492,35 +1456,35 @@ Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 144.
+(scrbook)              This could result in several error messages on input line 121.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 154.
+(scrbook)              This could result in several error messages on input line 126.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 165.
+(scrbook)              This could result in several error messages on input line 131.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 174.
+(scrbook)              This could result in several error messages on input line 136.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 179.
+(scrbook)              This could result in several error messages on input line 141.
 
 [8]
 
@@ -1528,42 +1492,35 @@ Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 184.
+(scrbook)              This could result in several error messages on input line 146.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 189.
+(scrbook)              This could result in several error messages on input line 156.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 194.
+(scrbook)              This could result in several error messages on input line 167.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 203.
+(scrbook)              This could result in several error messages on input line 176.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 216.
-
-
-Class scrbook Warning: incompatible usage of \@ssect detected.
-(scrbook)              You've used the KOMA-Script implementation of \@ssect
-(scrbook)              from within a non compatible caller, that does not
-(scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 221.
+(scrbook)              This could result in several error messages on input line 181.
 
 [9]
 
@@ -1571,49 +1528,42 @@ Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 226.
+(scrbook)              This could result in several error messages on input line 186.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 231.
+(scrbook)              This could result in several error messages on input line 191.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 236.
+(scrbook)              This could result in several error messages on input line 196.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 241.
+(scrbook)              This could result in several error messages on input line 205.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 246.
+(scrbook)              This could result in several error messages on input line 218.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 251.
-
-
-Class scrbook Warning: incompatible usage of \@ssect detected.
-(scrbook)              You've used the KOMA-Script implementation of \@ssect
-(scrbook)              from within a non compatible caller, that does not
-(scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 256.
+(scrbook)              This could result in several error messages on input line 223.
 
 [10]
 
@@ -1621,21 +1571,57 @@ Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 266.
+(scrbook)              This could result in several error messages on input line 233.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 271.
+(scrbook)              This could result in several error messages on input line 238.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 276.
+(scrbook)              This could result in several error messages on input line 243.
+
+
+Class scrbook Warning: incompatible usage of \@ssect detected.
+(scrbook)              You've used the KOMA-Script implementation of \@ssect
+(scrbook)              from within a non compatible caller, that does not
+(scrbook)              \scr@s@ct@@nn@m@ locally.
+(scrbook)              This could result in several error messages on input line 248.
+
+
+Class scrbook Warning: incompatible usage of \@ssect detected.
+(scrbook)              You've used the KOMA-Script implementation of \@ssect
+(scrbook)              from within a non compatible caller, that does not
+(scrbook)              \scr@s@ct@@nn@m@ locally.
+(scrbook)              This could result in several error messages on input line 253.
+
+
+Class scrbook Warning: incompatible usage of \@ssect detected.
+(scrbook)              You've used the KOMA-Script implementation of \@ssect
+(scrbook)              from within a non compatible caller, that does not
+(scrbook)              \scr@s@ct@@nn@m@ locally.
+(scrbook)              This could result in several error messages on input line 258.
+
+
+Class scrbook Warning: incompatible usage of \@ssect detected.
+(scrbook)              You've used the KOMA-Script implementation of \@ssect
+(scrbook)              from within a non compatible caller, that does not
+(scrbook)              \scr@s@ct@@nn@m@ locally.
+(scrbook)              This could result in several error messages on input line 263.
+
+[11]
+
+Class scrbook Warning: incompatible usage of \@ssect detected.
+(scrbook)              You've used the KOMA-Script implementation of \@ssect
+(scrbook)              from within a non compatible caller, that does not
+(scrbook)              \scr@s@ct@@nn@m@ locally.
+(scrbook)              This could result in several error messages on input line 272.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
@@ -1649,31 +1635,45 @@ Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 286.
+(scrbook)              This could result in several error messages on input line 290.
 
 
 Class scrbook Warning: incompatible usage of \@ssect detected.
 (scrbook)              You've used the KOMA-Script implementation of \@ssect
 (scrbook)              from within a non compatible caller, that does not
 (scrbook)              \scr@s@ct@@nn@m@ locally.
-(scrbook)              This could result in several error messages on input line 291.
+(scrbook)              This could result in several error messages on input line 295.
 
-) [11])
+
+Class scrbook Warning: incompatible usage of \@ssect detected.
+(scrbook)              You've used the KOMA-Script implementation of \@ssect
+(scrbook)              from within a non compatible caller, that does not
+(scrbook)              \scr@s@ct@@nn@m@ locally.
+(scrbook)              This could result in several error messages on input line 300.
+
+
+Class scrbook Warning: incompatible usage of \@ssect detected.
+(scrbook)              You've used the KOMA-Script implementation of \@ssect
+(scrbook)              from within a non compatible caller, that does not
+(scrbook)              \scr@s@ct@@nn@m@ locally.
+(scrbook)              This could result in several error messages on input line 305.
+
+) [12] [13])
 chapter 2.
 (./Story/Story.tex (./Story/chap/Prolog.tex) (./Story/chap/Chapter1.tex
-<./images/Karte.png, id=276, 602.25pt x 309.40594pt>
+<./images/Karte.png, id=349, 602.25pt x 309.40594pt>
 File: ./images/Karte.png Graphic file (type png)
 <use ./images/Karte.png>
 Package pdftex.def Info: ./images/Karte.png  used on input line 21.
 (pdftex.def)             Requested size: 421.57211pt x 216.58267pt.
- [12
+ [14
 
-] [13 <./images/Karte.png>]) (./Story/chap/Chapter2.tex [14] [15]
+] [15 <./images/Karte.png>]) (./Story/chap/Chapter2.tex [16] [17]
 
-LaTeX Warning: Reference `Petri' on page 16 undefined on input line 75.
+LaTeX Warning: Reference `Petri' on page 18 undefined on input line 75.
 
 
-LaTeX Warning: Reference `Fleet' on page 16 undefined on input line 76.
+LaTeX Warning: Reference `Fleet' on page 18 undefined on input line 76.
 
 )
 Underfull \hbox (badness 10000) in paragraph at lines 72--13
@@ -1690,19 +1690,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
 
  []
 
-(./Informationen/chap/Pirat.tex) [16] [17]
+(./Informationen/chap/Pirat.tex) [18] [19]
 
-LaTeX Warning: Reference `Petri' on page 18 undefined on input line 84.
+LaTeX Warning: Reference `Petri' on page 20 undefined on input line 84.
 
 
-LaTeX Warning: Reference `Fleet' on page 18 undefined on input line 85.
+LaTeX Warning: Reference `Fleet' on page 20 undefined on input line 85.
 
 )
 Underfull \hbox (badness 10000) in paragraph at lines 82--17
 
  []
 
-(./Story/chap/Chapter4.tex [18]
+(./Story/chap/Chapter4.tex [20]
 Underfull \hbox (badness 10000) in paragraph at lines 38--41
 
  []
@@ -1712,44 +1712,68 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--57
 
  []
 
-[19] [20] (./Informationen/chap/Bauern.tex)
+[21] [22] (./Informationen/chap/Bauern.tex)
 
-LaTeX Warning: Reference `Petri' on page 21 undefined on input line 138.
+LaTeX Warning: Reference `Petri' on page 23 undefined on input line 138.
 
 
-LaTeX Warning: Reference `Fleet' on page 21 undefined on input line 139.
+LaTeX Warning: Reference `Fleet' on page 23 undefined on input line 139.
 
 )
 Underfull \hbox (badness 10000) in paragraph at lines 136--21
 
  []
 
-) [21]
+[23] (./Story/chap/Chapter5.tex [24] [25] [26]
+
+LaTeX Warning: Reference `Petri' on page 27 undefined on input line 122.
+
+
+LaTeX Warning: Reference `Fleet' on page 27 undefined on input line 123.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--124
+
+ []
+
+(./Informationen/chap/Räuber.tex) [27]
+
+LaTeX Warning: Reference `Petri' on page 28 undefined on input line 184.
+
+
+LaTeX Warning: Reference `Fleet' on page 28 undefined on input line 185.
+
+))
+Underfull \hbox (badness 10000) in paragraph at lines 182--35
+
+ []
+
+[28]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 36.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 36.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 36.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 36.
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 73C7E82302A02C3179EB89167615C2E1;2372.
+(rerunfilecheck)             Checksum: 9344039BE1CEC75B83F8945E4AE2B7F7;3407.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 38944 strings out of 492616
- 765223 string characters out of 6132767
- 974494 words of memory out of 5000000
- 41997 multiletter control sequences out of 15000+600000
- 639653 words of font info for 165 fonts, out of 8000000 for 9000
+ 39004 strings out of 492616
+ 766163 string characters out of 6132767
+ 977021 words of memory out of 5000000
+ 42020 multiletter control sequences out of 15000+600000
+ 640433 words of font info for 171 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  71i,13n,77p,9084b,879s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{d:/texlive/2018/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}<d:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmbxo10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmr12.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmri10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmro10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><d:/texlive/2018/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on main.pdf (21 pages, 723439 bytes).
+Output written on main.pdf (28 pages, 745832 bytes).
 PDF statistics:
- 416 PDF objects out of 1000 (max. 8388607)
- 377 compressed objects within 4 object streams
- 95 named destinations out of 1000 (max. 500000)
- 34570 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 529 PDF objects out of 1000 (max. 8388607)
+ 482 compressed objects within 5 object streams
+ 114 named destinations out of 1000 (max. 500000)
+ 34666 words of extra memory for PDF output out of 35830 (max. 10000000)
 
