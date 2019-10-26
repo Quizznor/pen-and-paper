@@ -1,4 +1,4 @@
-\ProvidesClass{include/pnp}
+\ProvidesClass{include/thesis}
 \LoadClass[11pt,a4paper,titlepage]{scrbook}
 
 % ENCODING

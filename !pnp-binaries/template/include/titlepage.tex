@@ -22,7 +22,7 @@
 			--
 			($(current page.north west) + (\tpbinding + \tpborder, -\tpborder)$);
 
-		\node[anchor=north west] at ($(current page.north west) + (\tpbinding + \tpborder + \tplogooffset, -\tpborder -\tplogooffset)$) {\includegraphics[width=50mm]{img/howtobeahero.pdf}};
+		\node[anchor=north west] at ($(current page.north west) + (\tpbinding + \tpborder + \tplogooffset, -\tpborder -\tplogooffset)$) {\includegraphics[width=50mm]{img/header.pdf}};
 		\node[anchor=north east] at ($(current page.north east) + (-\tpbinding - \tpborder + \tplogooffset, -\tpborder -\tplogooffset)$)
 		{
 		};
@@ -39,9 +39,11 @@
 				\Huge
 				\adventurename\\
 				\vspace*{2cm}
-				\Large Pen\&Paper adventure\\by\\
-				\vspace*{1cm}
-				\huge\adventureauthor
+				\large Ein\\
+				\vspace*{0.2cm}
+				\huge Pen \& Paper\\ 
+				\vspace*{0.2cm}
+				\large Abenteuer
 			\end{minipage}
 		};
 
@@ -53,12 +55,16 @@
 				\Large
 
 				\begin{tabular}[ht]{l c l}
-					Formatierung: & \hfill & \typesetter\\
+					Author: & \hfill & \mainauthor\\
+					Coauthor: & \hfill & \coauthor\\
 				\end{tabular}
+
+				\vspace*{1cm}
+
 			\end{minipage}
 		};
 
-		\node [anchor=west] at ($(current page.south west) + (\tpbinding + \tpborder + \tpborderradius, \tpbotborder - 0.5 * \tpborder)$) {\tpfont\tiny{P\&P – Pen and Paper (How to be a Hero)}};
+		\node [anchor=west] at ($(current page.south west) + (\tpbinding + \tpborder + \tpborderradius, \tpbotborder - 0.5 * \tpborder)$) {\tpfont\tiny{Pen \& Paper }};
 
 		\node [anchor=east] at ($(current page.south east) + (-\tpborder - \tpborderradius, \tpbotborder - 0.5 * \tpborder)$) {\tpfont\large{\textbf{www.howtobeahero.de}}};
 	\end{tikzpicture}
