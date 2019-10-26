@@ -1,0 +1,36 @@
+\documentclass{include/protokollclass}
+
+\usepackage{pdfpages}
+\usepackage{booktabs}
+\usepackage{tcolorbox}
+\usepackage[ngerman]{babel}
+
+%% ---------------------------------
+%% |    Commands for neat stuff    |
+%% ---------------------------------
+
+\newcommand{\gqm}[1]{\glqq#1\grqq}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\green}[1]{\textcolor{green}{#1}}
+\newcommand{\purple}[1]{\textcolor{purple}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+
+\title{Der Schwarze Tod}
+\author{DerHauge\thanks{Rahmenhandlung}, Quizznor\thanks{Typesetting}}
+
+%% --------------------
+%% |    Main Story    |
+%% --------------------
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\chapter{Informationen}
+\input{./Informationen/Informationen.tex}
+
+\chapter{Story}
+\input{./Story/Story.tex}
+
+\end{document}
