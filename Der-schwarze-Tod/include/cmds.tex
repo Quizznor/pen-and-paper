@@ -1,3 +1,19 @@
-%% -----------------------
-%% |    Abbreviations    |
-%% -----------------------
+\newcommand{\changefont}[3]{\fontfamily{#1}\fontseries{#2}\fontshape{#3} \selectfont}
+\newcommand{\captiond}[2]{\caption[#1]{#1#2}}
+
+% math commands
+\newcommand{\abs}[1]{ \left\lvert#1\right\rvert}
+\newcommand*\diff{\mathop{}\!\mathrm{d}}
+\newcommand*\e{\mathrm{e}}	               % as euler constant
+\newcommand{\iu}{{i\mkern1mu}}		  		   %for imaginary unit
+\DeclareSIUnit\byte{B}
+\DeclareSIUnit\cl{c}
+\DeclareSIUnit\el{e}
+\DeclareSIUnit\neqv{\ensuremath{\text{n}_\text{eq}}}
+
+% typesetting
+\newcommand{\gqm}[1]{\glqq#1\grqq}
+\newcommand{\red}[1]{\textcolor{red}{#1}}
+\newcommand{\violet}[1]{\textcolor{violet}{#1}}
+\newcommand{\brown}[1]{\textcolor{brown}{#1}}
+\newcommand{\blue}[1]{\textcolor{blue}{#1}}

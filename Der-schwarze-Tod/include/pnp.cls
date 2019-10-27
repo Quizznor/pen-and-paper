@@ -1,4 +1,4 @@
-\ProvidesClass{include/thesis}
+\ProvidesClass{include/pnp}
 \LoadClass[11pt,a4paper,titlepage]{scrbook}
 
 % ENCODING
@@ -59,6 +59,7 @@
 \usepackage{subcaption}
 \usepackage{pgf}
 \usepackage{dpfloat}
+\usepackage{tcolorbox}
 
 \usepackage{tikz}
 \usetikzlibrary{calc}
