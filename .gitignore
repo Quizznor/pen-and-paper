@@ -30,6 +30,7 @@ Session.vim
 *.fls
 *.out
 *.toc
+*.log
 
 ## Intermediate documents:
 *.dvi
@@ -185,9 +186,3 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-
-## user input
-
-fig/
-tab/
-*.pdf
