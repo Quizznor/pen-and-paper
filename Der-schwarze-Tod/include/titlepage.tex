@@ -64,6 +64,14 @@
 			\end{minipage}
 		};
 
+		\node[anchor=south] at ($(pagebotcenter) + (0mm,\tpbotborder + 60mm)$)
+		{
+			\begin{minipage}{160mm}
+				\centering
+				\includegraphics[scale=0.9]{./img/theme.png}
+			\end{minipage}
+		};
+
 		\node [anchor=west] at ($(current page.south west) + (\tpbinding + \tpborder + \tpborderradius, \tpbotborder - 0.5 * \tpborder)$) {\tpfont\tiny{Pen \& Paper }};
 
 		\node [anchor=east] at ($(current page.south east) + (-\tpborder - \tpborderradius, \tpbotborder - 0.5 * \tpborder)$) {\tpfont\large{\textbf{www.howtobeahero.de}}};

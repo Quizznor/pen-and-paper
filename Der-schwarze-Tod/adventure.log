@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.10.4)  1 NOV 2019 13:56
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.10.4)  1 NOV 2019 14:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1884,15 +1884,21 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 57.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 57.
+<./img/theme.png, id=9, 475.7775pt x 266.9975pt>
+File: ./img/theme.png Graphic file (type png)
+<use ./img/theme.png>
+Package pdftex.def Info: ./img/theme.png  used on input line 71.
+(pdftex.def)             Requested size: 428.19577pt x 240.2955pt.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 69.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 77.
  [1
 
 
 
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/header.pdf>]) [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./img/header.pdf> <./img/t
+heme.png>]) [2
 
 
 ]
@@ -1915,6 +1921,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 9.
 
 
 ]
+chapter 1.
 (./chap/Informationen/general.tex
 LaTeX Font Info:    Try loading font information for OMS+lmr on input line 20.
  (/usr/share/texmf-dist/tex/latex/lm/omslmr.fd
@@ -1922,13 +1929,18 @@ File: omslmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/lmsy/m/n' tried instead on input line 20.
-) [1] (./chap/Informationen/special.tex)
+) [1
+
+
+] (./chap/Informationen/special.tex)
 Underfull \hbox (badness 10000) in paragraph at lines 15--18
 
  []
 
-[2] (./chap/Story.tex (./chap/Story/Prolog.tex) (./chap/Story/Chapter1.tex
-<./img/Karte.png, id=49, 602.25pt x 309.40594pt>
+[2]
+chapter 2.
+(./chap/Story.tex (./chap/Story/Prolog.tex) (./chap/Story/Chapter1.tex
+<./img/Karte.png, id=66, 602.25pt x 309.40594pt>
 File: ./img/Karte.png Graphic file (type png)
 <use ./img/Karte.png>
 Package pdftex.def Info: ./img/Karte.png  used on input line 21.
@@ -1938,14 +1950,14 @@ Overfull \hbox (11.85234pt too wide) in paragraph at lines 21--22
  [] 
  []
 
+[3
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [3]
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [4 <./img/Karte.png>]) (./chap/Story/Chapter2.tex
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 5924) has occurred while \output is active []
 
  [5]
 
@@ -1956,4 +1968,195 @@ LaTeX Warning: Reference `Br\IeC {\"u}gge' on page 6 undefined on input line 29
 LaTeX Warning: Reference `Gorich' on page 6 undefined on input line 29.
 
 
-LaTeX Warning: Reference `Hanno' on page 6 undefined on input
+LaTeX Warning: Reference `Hanno' on page 6 undefined on input line 48.
+
+[6]
+
+LaTeX Warning: Reference `MutterKind' on page 7 undefined on input line 57.
+
+
+LaTeX Warning: Reference `Didrich' on page 7 undefined on input line 61.
+
+
+LaTeX Warning: Reference `Fleet' on page 7 undefined on input line 76.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 72--13
+
+ []
+
+(./chap/Story/Chapter3.tex [7]
+
+LaTeX Warning: Reference `Matrosen' on page 8 undefined on input line 5.
+
+
+LaTeX Warning: Reference `Hafenarbeiter' on page 8 undefined on input line 5.
+
+
+LaTeX Warning: Reference `Aufseher' on page 8 undefined on input line 5.
+
+
+LaTeX Warning: Reference `Prostituierte' on page 8 undefined on input line 7.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+[8]
+
+LaTeX Warning: Reference `Gert' on page 9 undefined on input line 58.
+
+
+LaTeX Warning: Reference `Gorich' on page 9 undefined on input line 77.
+
+[9]
+
+LaTeX Warning: Reference `Fleet' on page 10 undefined on input line 94.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 91--17
+
+ []
+
+(./chap/Story/Chapter4.tex [10]
+
+LaTeX Warning: Reference `Wolfgang' on page 11 undefined on input line 24.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--41
+
+ []
+
+
+LaTeX Warning: Reference `Ruth' on page 11 undefined on input line 47.
+
+
+LaTeX Warning: Reference `Ottilde' on page 11 undefined on input line 47.
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 54--57
+
+ []
+
+
+LaTeX Warning: Reference `Wolfgang' on page 12 undefined on input line 67.
+
+[12] [13]
+
+LaTeX Warning: Reference `Wolfgang' on page 14 undefined on input line 112.
+
+
+LaTeX Warning: Reference `Hermann' on page 14 undefined on input line 112.
+
+
+LaTeX Warning: Reference `Fleet' on page 14 undefined on input line 149.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 146--21
+
+ []
+
+(./chap/Story/Chapter5.tex [14]
+
+LaTeX Warning: Reference `Luis' on page 15 undefined on input line 34.
+
+[15] [16]
+
+LaTeX Warning: Reference `Sigrun' on page 17 undefined on input line 80.
+
+[17]
+
+LaTeX Warning: Reference `Hagen' on page 18 undefined on input line 108.
+
+
+LaTeX Warning: Reference `Fleet' on page 18 undefined on input line 123.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--124
+
+ []
+
+
+Underfull \vbox (badness 2846) has occurred while \output is active []
+
+ [18]
+[19]
+
+LaTeX Warning: Reference `Fleet' on page 20 undefined on input line 194.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 191--25
+
+ []
+
+(./chap/Story/Chapter6.tex [20]
+
+LaTeX Warning: Reference `Salus' on page 21 undefined on input line 11.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21]
+
+LaTeX Warning: Reference `' on page 22 undefined on input line 60.
+
+[22]
+
+LaTeX Warning: Reference `Hanno' on page 23 undefined on input line 68.
+
+
+LaTeX Warning: Reference `Fleet' on page 23 undefined on input line 78.
+
+)
+Underfull \hbox (badness 10000) in paragraph at lines 75--29
+
+ []
+
+) [23]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 24.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 24.
+ (./adventure.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 24.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 24.
+Package rerunfilecheck Info: File `adventure.out' has not changed.
+(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+Package logreq Info: Writing requests to 'adventure.run.xml'.
+\openout1 = `adventure.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 48407 strings out of 492623
+ 965623 string characters out of 6135669
+ 1649443 words of memory out of 5000000
+ 51366 multiletter control sequences out of 15000+600000
+ 640018 words of font info for 184 fonts, out of 8000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 62i,20n,79p,9089b,2191s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf-dist/fo
+nts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf-dist/fonts/enc/dvips/base/8r.e
+nc}</usr/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf-di
+st/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf-dist/fonts/type1/public/lm
+/lmri10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/share
+/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf-dist/fonts/typ
+e1/public/lm/lmsy10.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.
+pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb>
+Output written on adventure.pdf (27 pages, 706001 bytes).
+PDF statistics:
+ 299 PDF objects out of 1000 (max. 8388607)
+ 254 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 500000)
+ 36452 words of extra memory for PDF output out of 42996 (max. 10000000)
+
