@@ -1,0 +1,71 @@
+\newcommand{\tpborder}{15mm}
+\newcommand{\tpbotborder}{20mm}
+\newcommand{\tpborderradius}{10mm}
+\newcommand{\tpbinding}{16mm}
+\newcommand{\tplogooffset}{10mm}
+\newcommand{\tpfont}{\fontfamily{phv}\selectfont}
+
+\begin{titlepage}
+
+	\begin{tikzpicture}[remember picture,overlay,every node/.style={inner sep=0,outer sep=0}]
+
+		\draw[color=gray]
+			($(current page.north west) + (\tpbinding + \tpborder, -\tpborder)$)
+			--
+			($(current page.north east) + (-\tpborder -\tpborderradius, -\tpborder)$)
+			arc (90:0:\tpborderradius)
+			--
+			($(current page.south east) + (-\tpborder, \tpbotborder)$)
+			--
+			($(current page.south west) + (\tpbinding + \tpborder + \tpborderradius, \tpbotborder)$)
+			arc (270:180:\tpborderradius)
+			--
+			($(current page.north west) + (\tpbinding + \tpborder, -\tpborder)$);
+
+		\node[anchor=north west] at ($(current page.north west) + (\tpbinding + \tpborder + \tplogooffset, -\tpborder -\tplogooffset)$) {\includegraphics[width=50mm]{img/header.pdf}};
+		\node[anchor=north east] at ($(current page.north east) + (-\tpbinding - \tpborder + \tplogooffset, -\tpborder -\tplogooffset)$)
+		{
+		};
+
+
+		\coordinate (pagetopcenter) at ($0.5*(current page.north west) + 0.5*(current page.north east) + (0.5*\tpbinding,0mm)$);
+		\coordinate (pagebotcenter) at ($0.5*(current page.south west) + 0.5*(current page.south east) + (0.5*\tpbinding,0mm)$);
+
+		\node[anchor=north] at ($(pagetopcenter) + (0mm,-\tpborder -60mm)$)
+		{
+			\begin{minipage}{160mm}
+				\centering
+				\tpfont
+				\Huge
+				\adventurename\\
+				\vspace*{2cm}
+				\large Ein\\
+				\vspace*{0.2cm}
+				\huge Pen \& Paper\\ 
+				\vspace*{0.2cm}
+				\large Abenteuer
+			\end{minipage}
+		};
+
+		\node[anchor=south] at ($(pagebotcenter) + (0mm,\tpbotborder + 20mm)$)
+		{
+			\begin{minipage}{160mm}
+				\centering
+				\tpfont
+				\Large
+
+				\begin{tabular}[ht]{l c l}
+					Author: & \hfill & \mainauthor\\
+					Coauthor: & \hfill & \coauthor\\
+				\end{tabular}
+
+				\vspace*{1cm}
+
+			\end{minipage}
+		};
+
+		\node [anchor=west] at ($(current page.south west) + (\tpbinding + \tpborder + \tpborderradius, \tpbotborder - 0.5 * \tpborder)$) {\tpfont\tiny{Pen \& Paper }};
+
+		\node [anchor=east] at ($(current page.south east) + (-\tpborder - \tpborderradius, \tpbotborder - 0.5 * \tpborder)$) {\tpfont\large{\textbf{www.howtobeahero.de}}};
+	\end{tikzpicture}
+\end{titlepage}
