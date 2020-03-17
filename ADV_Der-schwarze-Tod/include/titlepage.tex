@@ -1,0 +1,76 @@
+\newcommand{\tpborder}{15mm}
+\newcommand{\tpbotborder}{20mm}
+\newcommand{\tpborderradius}{10mm}
+\newcommand{\tpbinding}{16mm}
+\newcommand{\tplogooffset}{10mm}
+\newcommand{\tpfont}{\fontfamily{phv}\selectfont}
+
+\begin{titlepage}
+
+	\begin{tikzpicture}[remember picture,overlay,every node/.style={inner sep=0,outer sep=0}]
+
+		\draw[color=gray]
+			($(current page.north west) + (\tpbinding + \tpborder, -\tpborder)$)
+			--
+			($(current page.north east) + (-\tpborder -\tpborderradius, -\tpborder)$)
+			arc (90:0:\tpborderradius)
+			--
+			($(current page.south east) + (-\tpborder, \tpbotborder)$)
+			--
+			($(current page.south west) + (\tpbinding + \tpborder + \tpborderradius, \tpbotborder)$)
+			arc (270:180:\tpborderradius)
+			--
+			($(current page.north west) + (\tpbinding + \tpborder, -\tpborder)$);
+
+		\node[anchor=north west] at ($(current page.north west) + (\tpbinding + \tpborder + \tplogooffset, -\tpborder -\tplogooffset)$) {\includegraphics[width=40mm]{img/header.pdf}};
+		\node[anchor=north east] at ($(current page.north east) + (-\tpbinding - \tpborder + \tplogooffset, -\tpborder -\tplogooffset)$)
+		{
+		};
+
+
+		\coordinate (pagetopcenter) at ($0.5*(current page.north west) + 0.5*(current page.north east) + (0.5*\tpbinding,0mm)$);
+		\coordinate (pagebotcenter) at ($0.5*(current page.south west) + 0.5*(current page.south east) + (0.5*\tpbinding,0mm)$);
+
+		\node[anchor=north] at ($(pagetopcenter) + (0mm,-\tpborder -15mm)$)
+		{
+			\begin{minipage}{160mm}
+			\center
+				\hspace{0pt}\\
+				{\Large Von \bfseries \mainauthor}\\[5pt]
+				\ifthenelse{\equal{\coauthor}{Coauthor}}
+				{}
+				{{\Large und \bfseries\coauthor}\\}
+				\vspace{3.5cm}
+				{\scalebox{1.5}{\Huge\bfseries \adventurename,}}\\
+				\vspace{0.8cm}
+				{\LARGE\bfseries EIN PEN AND PAPER ABENTEUER}\\[10pt]
+			\end{minipage}
+		};
+
+		\node[anchor=south] at ($(pagebotcenter) + (-0mm,\tpbotborder + 40mm)$)
+		{
+			\begin{minipage}{160mm}
+				\Large\centering
+					\begin{tabular*}{0.5\textwidth}{@{\extracolsep{\fill}} lr}
+					\textbf{Wo?} & \place \\
+					\textbf{Wann?} & \storytime \\
+					\textbf{Spielerzahl?} & \playercount \\
+					\textbf{Schwierigkeit?} & \difficulty \\
+					\textbf{Spieldauer?} & \duration \\
+					\end{tabular*}
+		\end{minipage}
+		};
+
+		\node[anchor=south] at ($(pagebotcenter) + (0mm,\tpbotborder + 90mm)$)
+		{
+			\begin{minipage}{160mm}
+				\centering
+				\framebox{\includegraphics[width=0.8\textwidth]{img/theme.png}}
+			\end{minipage}
+		};
+
+		\node [anchor=west] at ($(current page.south west) + (\tpbinding + \tpborder + \tpborderradius, \tpbotborder - 0.5 * \tpborder)$) {\tpfont\large{Pen and Paper - \ruleset}};
+
+		\node [anchor=east] at ($(current page.south east) + (-\tpborder - \tpborderradius, \tpbotborder - 0.5 * \tpborder)$) {\tpfont\large{\textbf{\ruleseturl}}};
+	\end{tikzpicture}
+\end{titlepage}
