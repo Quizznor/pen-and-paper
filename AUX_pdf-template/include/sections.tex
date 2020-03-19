@@ -5,11 +5,8 @@
 
 \newcommand{\TableOfContents}
 {
-	% \cleardoublepage
 	\begingroup \let\clearpage\relax
 	\tableofcontents
-	%\listoffigures
-	%\listoftables
 	\endgroup
 }
 
@@ -17,4 +14,8 @@
 \newcommand{\MainMatter}
 {
 	\mainmatter
+	\definecolor{RoyalRed}{RGB}{157,16, 45}
+	\titleformat{\chapter}[display]
+  { \normalsize \huge  \color{black}}
+  {\flushright \normalsize \color{RoyalRed} \MakeUppercase {\fontsize{20}{20}\selectfont \sffamily  \chaptertitlename } \hspace{1 ex} { \fontsize{25}{25}\selectfont \color{RoyalRed} \sffamily  \thechapter }} {10 pt}{\huge\underline}
 }

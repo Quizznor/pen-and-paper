@@ -37,6 +37,10 @@
 % \renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1}{}}
 \fancyfoot[R]{\thepage}
 
+% CHAPTERS
+\usepackage{color}
+\usepackage[ ]{titlesec}
+
 % MATH, PHYSICS
 \usepackage{amsmath}
 \usepackage{mathtools}
