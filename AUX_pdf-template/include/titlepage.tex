@@ -10,19 +10,19 @@
 	\begin{tikzpicture}[remember picture,overlay,every node/.style={inner sep=0,outer sep=0}]
 
 		\draw[color=gray]
-			($(current page.north west) + (\tpbinding + \tpborder, -\tpborder)$)
+			($(current page.north west) + (\tpbinding + \tpborder-16mm, -\tpborder)$)
 			--
 			($(current page.north east) + (-\tpborder -\tpborderradius, -\tpborder)$)
 			arc (90:0:\tpborderradius)
 			--
 			($(current page.south east) + (-\tpborder, \tpbotborder)$)
 			--
-			($(current page.south west) + (\tpbinding + \tpborder + \tpborderradius, \tpbotborder)$)
+			($(current page.south west) + (\tpbinding + \tpborder + \tpborderradius-16mm, \tpbotborder)$)
 			arc (270:180:\tpborderradius)
 			--
-			($(current page.north west) + (\tpbinding + \tpborder, -\tpborder)$);
+			($(current page.north west) + (\tpbinding + \tpborder-16mm, -\tpborder)$);
 
-		\node[anchor=north west] at ($(current page.north west) + (\tpbinding + \tpborder + \tplogooffset, -\tpborder -\tplogooffset)$) {\includegraphics[width=40mm]{img/header.pdf}};
+		\node[anchor=north west] at ($(current page.north west) + (\tpbinding + \tpborder + \tplogooffset-16mm, -\tpborder -\tplogooffset)$) {\includegraphics[width=50mm]{img/header.pdf}};
 		\node[anchor=north east] at ($(current page.north east) + (-\tpbinding - \tpborder + \tplogooffset, -\tpborder -\tplogooffset)$)
 		{
 		};
@@ -31,7 +31,7 @@
 		\coordinate (pagetopcenter) at ($0.5*(current page.north west) + 0.5*(current page.north east) + (0.5*\tpbinding,0mm)$);
 		\coordinate (pagebotcenter) at ($0.5*(current page.south west) + 0.5*(current page.south east) + (0.5*\tpbinding,0mm)$);
 
-		\node[anchor=north] at ($(pagetopcenter) + (0mm,-\tpborder -15mm)$)
+		\node[anchor=north] at ($(pagetopcenter) + (-8mm,-\tpborder -15mm)$)
 		{
 			\begin{minipage}{160mm}
 			\center
@@ -43,11 +43,19 @@
 				\vspace{3.5cm}
 				{\scalebox{1.5}{\Huge\bfseries \adventurename,}}\\
 				\vspace{0.8cm}
-				{\LARGE\bfseries EIN PEN AND PAPER ABENTEUER}\\[10pt]
+				{\color{RoyalRed}\LARGE\bfseries EIN PEN AND PAPER ABENTEUER}\\[10pt]
 			\end{minipage}
 		};
 
-		\node[anchor=south] at ($(pagebotcenter) + (0mm,\tpbotborder + 50mm)$)
+		\node[anchor=south] at ($(pagebotcenter) + (-8mm,\tpbotborder + 60mm)$)
+		{
+			\begin{minipage}{160mm}
+				\centering
+				\framebox{\includegraphics[width=0.7\textwidth]{img/header.jpg}}
+			\end{minipage}
+		};
+
+		\node[anchor=south] at ($(pagebotcenter) + (-8mm,\tpbotborder + 20mm)$)
 		{
 			\begin{minipage}{160mm}
 				\centering\Large
@@ -59,14 +67,6 @@
 					\textbf{Spieldauer?} & \duration \\
 					\end{tabular*}
 		\end{minipage}
-		};
-
-		\node[anchor=south] at ($(pagebotcenter) + (0mm,\tpbotborder + 90mm)$)
-		{
-			\begin{minipage}{160mm}
-				\centering
-				\framebox{\includegraphics[width=0.8\textwidth]{img/story.png}}
-			\end{minipage}
 		};
 
 		\node [anchor=west] at ($(current page.south west) + (\tpbinding + \tpborder + \tpborderradius, \tpbotborder - 0.5 * \tpborder)$) {\tpfont\large{Pen \& Paper}};

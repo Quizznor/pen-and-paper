@@ -15,7 +15,7 @@
 \usepackage{spreadtab}
 
 % GEOMETRY
-\usepackage[bindingoffset=16mm,left=25mm,right=25mm,top=40mm,bottom=35mm,headheight=15pt,footskip=10mm+.5em]{geometry}
+\usepackage[bindingoffset=0mm,left=25mm,right=25mm,top=40mm,bottom=35mm,headheight=15pt,footskip=10mm+.5em]{geometry}
 \parindent 0cm
 \parskip 1.5ex
 \usepackage[all]{nowidow}
@@ -28,7 +28,6 @@
 
 % HEADERS
 \usepackage{fancyhdr}
-\pagestyle{fancy}
 \fancyhf{}
 \fancyhead[L]{\thepage$\;$- \adventurename}
 \setlength\headheight{26pt}
@@ -39,7 +38,11 @@
 
 % CHAPTERS
 \usepackage{color}
+\definecolor{RoyalRed}{RGB}{157,16, 45}
 \usepackage[ ]{titlesec}
+
+\titleformat{\section}[display]
+{}{\flushright \fontsize{17}{17}\thesection}{-30pt}{\Large\bfseries}
 
 % MATH, PHYSICS
 \usepackage{amsmath}
@@ -67,6 +70,8 @@
 
 \usepackage{tikz}
 \usetikzlibrary{calc}
+\usetikzlibrary{backgrounds}
+\makeatletter
 
 % UTILITIES
 \usepackage[
@@ -95,3 +100,6 @@
 \input{include/config.tex}
 \input{include/sections.tex}
 \input{include/cmds.tex}
+
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}

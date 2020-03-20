@@ -1,16 +1,10 @@
- % typesetting
-% TODO: redefine this
-\newcommand{\gqm}[1]{\glqq#1\grqq}
-\newcommand{\red}[1]{\textcolor{red}{#1}}
-\newcommand{\violet}[1]{\textcolor{violet}{#1}}
-\newcommand{\brown}[1]{\textcolor{brown}{#1}}
-\newcommand{\blue}[1]{\textcolor{blue}{#1}}
+\documentclass{article}
+\thispagestyle{empty}
+\usepackage{lipsum}
+\usepackage{tikz}
+\usetikzlibrary{backgrounds}
+\makeatletter
 
-% draft
-\newcommand{\todo}[1]{\stepcounter{todocounter}{\color{blue}\textsuperscript{[to do: #1]}}}
-\newcommand{\rephrase}[1]{\stepcounter{todocounter}{\color{blue}#1\textsuperscript{\color{blue}[rephrase]}}}
-
-% storypage quote
 \tikzset{%
   fancy quotes/.style={
     text width=\fq@width pt,
@@ -41,7 +35,7 @@
   }
 }
 
-\newenvironment{fancyquote}[1][]{%
+\newenvironment{fancyquotes}[1][]{%
 \noindent
 \tikzpicture[fancy quotes background]
 \node[fancy quotes opening,anchor=north west] (fq@ul) at (0,0) {``};
@@ -51,3 +45,14 @@
 {\egroup;\node[overlay,fancy quotes closing,anchor=east] at (fq@txt.south east) {''};
 \endtikzpicture\vspace{0cm}\begin{flushright}-\textit{Douglas Adams}\end{flushright}
 }
+
+
+\begin{document}
+
+\begin{fancyquotes}
+\Huge\fontsize{20}{10}Wer das liest ist doof, wer das nicht liest ist aber auch doof, such is life i guess
+\end{fancyquotes}
+
+\lipsum[1]
+
+\end{document}
