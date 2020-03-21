@@ -11,3 +11,49 @@
 \newcommand{\rephrase}[1]{\stepcounter{todocounter}{\color{blue}#1\textsuperscript{\color{blue}[rephrase]}}}
 
 % storypage quote
+\makeatletter
+\def\advquote{%
+    \@ifnextchar[{\advquote@i}{\advquote@i[]}%]
+           }%
+\def\advquote@i[#1]{%
+    \def\tempa{#1}%
+    \@ifnextchar[{\advquote@ii}{\advquote@ii[]}%]
+                 }%
+\def\advquote@ii[#1]{%
+    \def\tempb{#1}%
+    \@ifnextchar[{\advquote@iii}{\advquote@iii[]}%]
+                      }%
+\def\advquote@iii[#1]{%
+    \def\tempc{#1}%
+    \vspace{1em}%
+    \noindent%
+    \begin{list}{}{%
+         \setlength{\leftmargin}{0.1\textwidth}%
+         \setlength{\rightmargin}{0.1\textwidth}%
+                  }%
+         \item[]%
+         \begin{picture}(0,0)%
+         \put(-15,-5){\makebox(0,0){\scalebox{5}{\textcolor{RoyalRed}{``}}}}%
+         \end{picture}%
+         \begingroup\itshape}%
+
+ \def\endadvquote{%
+ \endgroup\par%
+ \makebox[0pt][l]{%
+ \hspace{0.8\textwidth}%
+ \begin{picture}(0,0)(0,0)%
+ \put(\quotelength,5){\makebox(0,0){%
+ \scalebox{5}{\color{RoyalRed}''}}}%
+ \end{picture}}%
+
+ \ifx\tempa\empty%
+ \else%
+    \ifx\tempc\empty%
+       \hfill\\\mbox{}\hfill\vspace{0mm}\tempa \emph{\tempb}%
+   \else%
+       \hfill\\\mbox{}\hfill\vspace{0mm}\tempa \emph{\tempb}\ \tempc%
+   \fi\fi\par%
+   \vspace{0.5em}%
+ \end{list}%
+ }%
+ \makeatother
