@@ -53,10 +53,12 @@
 \rhead{\includegraphics[height=4mm]{img/quill.png}}
 \renewcommand{\headrulewidth}{0.6pt}
 
-% CHAPTERS
-\usepackage{minitoc}
+% COLORS
 \usepackage{color}
 \definecolor{RoyalRed}{RGB}{157,16, 45}
+\definecolor{RoyalBlue}{RGB}{0,70,202}
+
+% CHAPTERS
 \usepackage[ ]{titlesec}
 
 \titleformat{\chapter}[display]{}{}{}{\Huge\bfseries}

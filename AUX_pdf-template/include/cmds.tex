@@ -1,13 +1,12 @@
  % typesetting
 % TODO: redefine this
 \newcommand{\gqm}[1]{\glqq#1\grqq}
-\newcommand{\probe}[1]{\textcolor{RoyalRed}{#1}}
-\newcommand{\blue}[1]{\textcolor{blue}{#1}}
-
-% Already redefined
+\
+\renewcommand{\ref}[1]{\textcolor{RoyalBlue}{\ref{#1}}}
 \newcommand{\charakter}[1]{\textcolor{violet}{\gls{#1}}}
 
 % draft
+\newcommand{\probe}[1]{\textcolor{RoyalRed}{#1}}
 \newcommand{\todo}[1]{\stepcounter{todocounter}{\color{blue}\textsuperscript{[to do: #1]}}}
 \newcommand{\rephrase}[1]{\stepcounter{todocounter}{\color{blue}#1\textsuperscript{\color{blue}[rephrase]}}}
 
