@@ -7,26 +7,20 @@
 	\input{include/titlepage.tex}
 
 	\chapter*{Anmerkungen für Spielleiter}
-	
-	\input{sections/notes-all.tex}
-	\input{sections/notes-adv.tex}
-	\lipsum[1-12]
+
+	\input{sections/notes/notes-all.tex}
+	\input{sections/notes/notes-adv.tex}
 
 	\MainMatter
 
-	\input{./include/storypage.tex}
+	\input{include/storypage.tex}
 	\TableOfContents
 
 	% Story
-	\chapter[Im Ratshaus]{Eine Angebot, dass man nicht ablehnen kann.}
-	\section{Das Gespräck mit dem Rat}
-	\lipsum[1-12]
-	\subsection{test1}
-	\subsubsection{test2}
-	\lipsum[1]
+	\input{sections/story.tex}
 
 	\BackMatter
-
-	\input{./include/charpage.tex}
+	\input{include/charpage.tex}
+	\printglossary
 
 \end{document}

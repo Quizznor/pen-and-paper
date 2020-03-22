@@ -54,12 +54,14 @@
 \renewcommand{\headrulewidth}{0.6pt}
 
 % CHAPTERS
+\usepackage{minitoc}
 \usepackage{color}
 \definecolor{RoyalRed}{RGB}{157,16, 45}
 \usepackage[ ]{titlesec}
 
-\titleformat{\section}[display]{}{}{-30pt}{\Large\bfseries}
-\titleformat{\subsection}[display]{}{}{-30pt}{\large\bfseries}
+\titleformat{\chapter}[display]{}{}{}{\Huge\bfseries}
+\titleformat{\section}[display]{}{}{}{\Large\bfseries}
+\titleformat{\subsection}[display]{}{}{}{\large\bfseries}
 
 
 % MATH, PHYSICS
@@ -121,3 +123,24 @@
 
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
+
+% GLOSSARY
+\usepackage[automake]{glossaries}
+\newglossarystyle{list-custom}{%
+\glossarystyle{list}
+% \renewcommand*{\glossentry}[2]{%
+% 		\item[\color{RoyalRed}\MakeUppercase{\fontsize{12}{12}\selectfont\sffamily\underline{\glsentryname{##1}}}]
+% 		\glossentrydesc{##1}\vspace{1em}\newline\vspace{2em}\color{RoyalRed}
+% 		\textbf{Auftreten:}\color{black}\glspostdescription\space ##2
+% 		\glstarget{##1}{\textbf{##2}}
+% }
+\renewcommand*{\glossentry}[2]{%
+\item[\Large\color{RoyalRed}\glsentryitem{##1}%
+\glstarget{##1}{\glossentryname{##1}}]
+\glossentrydesc{##1}\vspace{1em}\newline\color{RoyalRed}\textbf{AUFTRETEN:}\color{black}\glspostdescription\space ##2}%
+}
+
+
+\loadglsentries{sections/char}
+\makeglossary
+\setglossarystyle{list-custom}
