@@ -1,7 +1,8 @@
 \newcommand{\FrontMatter}
 {
-	\frontmatter
-	\pagestyle{empty}
+	\frontmatter%
+	\pagestyle{fancy-info}%
+	\titlespacing*{\chapter}{0pt}{0pt}{-6em}
 }
 
 \newcommand{\TableOfContents}
@@ -9,6 +10,7 @@
 	\newpage
 	\begingroup \let\clearpage\relax
 	\tableofcontents
+	\thispagestyle{fancy}
 	\endgroup
 }
 
@@ -16,7 +18,9 @@
 \newcommand{\MainMatter}
 {
 	\mainmatter
-	\pagestyle{fancy}
+	\pagestyle{fancy-story}
+	
+	\titlespacing*{\chapter}{0pt}{0pt}{2em}
 	\titleformat{\chapter}[display]
   { \normalsize \huge  \color{black}}
   {\flushright \normalsize \color{RoyalRed} \MakeUppercase {\fontsize{20}{20}\selectfont \sffamily  \chaptertitlename }
@@ -31,4 +35,10 @@
 
 	\titleformat{\subsubsection}[display]
 	{}{\flushright \fontsize{17}{17}\thesubsubsection}{-22pt}{\color{RoyalRed}\large\bfseries\MakeUppercase}
+}
+
+\newcommand{\BackMatter}
+{
+
+
 }

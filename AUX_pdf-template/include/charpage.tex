@@ -9,7 +9,7 @@
 			\begin{minipage}{160mm}
 			\centering
 				\hspace{0pt}\\
-				{\scalebox{1.5}{\Huge\bfseries STORY}}\\
+				{\scalebox{1.5}{\Huge\bfseries CHARAKTERE}}\\
 			\end{minipage}
 		};
 
@@ -17,17 +17,21 @@
 		{
 			\begin{minipage}{160mm}
 				\centering
-				\framebox{\includegraphics[width=0.9\textwidth]{img/story.png}}
+				\framebox{\includegraphics[width=0.7\textwidth]{img/header.jpg}}
 			\end{minipage}
 		};
 
 		\node[anchor=south] at ($(pagebotcenter) + (-16mm,\tpbotborder + 40mm)$)
 		{
 			\begin{minipage}{160mm}
-			\centering
-				\begin{advquote}[\Large - \quoteauthor]
-					\huge \quotetext
-				\end{advquote}
+			\centering\Large
+				\begin{tabular*}{0.5\textwidth}{@{\extracolsep{\fill}} lr}
+				\textbf{Wo?} & \place \\
+				\textbf{Wann?} & \storytime \\
+				\textbf{Spielerzahl?} & \playercount \\
+				\textbf{Schwierigkeit?} & \difficulty \\
+				\textbf{Spieldauer?} & \duration \\
+				\end{tabular*}
 			\end{minipage}
 		};
 	\end{tikzpicture}

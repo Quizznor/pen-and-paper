@@ -1,5 +1,5 @@
 \ProvidesClass{include/pnp}
-\LoadClass[11pt,a4paper,titlepage]{scrbook}
+\LoadClass[11pt,a4paper,titlepage,openany]{scrbook}
 
 % ENCODING
 \usepackage[utf8]{inputenc}
@@ -28,21 +28,39 @@
 
 % HEADERS
 \usepackage{fancyhdr}
-\fancyhf{}
-\fancyhead[L]{\thepage$\;$- \adventurename}
+\pagestyle{empty}
+
+\fancypagestyle{fancy-info}{%
+\fancyhf{}%
+\pagenumbering{Roman}%
+\fancyfoot[R]{\thepage}%
+\fancyhead[L]{\adventurename$\;$- Informationen\hfill\includegraphics[width=3mm]{img/quill.png}}
+}
+
+\fancypagestyle{fancy-story}{%
+\fancyhf{}%
+\fancyfoot[R]{\thepage}%
+\fancyhead[L]{\adventurename$\;$- Story\hfill\includegraphics[width=3mm]{img/quill.png}}
+}
+
+\fancypagestyle{fancy-chars}{%
+\fancyhf{}%
+\fancyfoot[R]{\thepage}%
+\fancyhead[L]{\adventurename$\;$- Charaktere\hfill\includegraphics[width=3mm]{img/quill.png}}
+}
+
 \setlength\headheight{26pt}
 \rhead{\includegraphics[height=4mm]{img/quill.png}}
 \renewcommand{\headrulewidth}{0.6pt}
-% \renewcommand{\chaptermark}[1]{\markboth{\chaptername\ \thechapter.\ #1}{}}
-\fancyfoot[R]{\thepage}
 
 % CHAPTERS
 \usepackage{color}
 \definecolor{RoyalRed}{RGB}{157,16, 45}
 \usepackage[ ]{titlesec}
 
-\titleformat{\section}[display]
-{}{\flushright \fontsize{17}{17}\thesection}{-30pt}{\Large\bfseries}
+\titleformat{\section}[display]{}{}{-30pt}{\Large\bfseries}
+\titleformat{\subsection}[display]{}{}{-30pt}{\large\bfseries}
+
 
 % MATH, PHYSICS
 \usepackage{amsmath}
@@ -103,5 +121,3 @@
 
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
-
-% QUOTE
