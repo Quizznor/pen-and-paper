@@ -3,30 +3,28 @@
 
 Auf den Seiten \pageref{info-start}-\pageref{info-end} befinden sich generelle Informationen über den Aufbau des Abenteuers. Beginnend mit Erklärungen zur
 Textformatierung folgen Erläuterungen über die Rahmenhandlung und abenteuerspezifischen Regelwerken. Anschließend befindt sich auf den Seiten
-\pageref{adv-start}-\pageref{adv-end} die Haupthandlungen des Abenteuers. Abschluss bilden Informationen über im Abenteuer auftretende Charaktere auf den
-Seiten \pageref{char-start}-\pageref{char-end}.
+\pageref{adv-start}-\pageref{adv-end} die Haupthandlungen, und \pageref{char-start}-\pageref{char-end} auftretende Charaktere.
+
 
 \subsubsection*{Formatierung:}
 
 \begin{itemize}
-  \item \textit{Kursive Texte} \\
-  Alles, was \textit{kursiv} geschrieben ist, soll wörtlich vorgetragen werden. Dabei handelt es sich in der Regel
+  \item \textbf{\textit{Kursive Texte}} \\
+  Alles, was \textbf{\textit{kursiv}} geschrieben ist, soll wörtlich vorgetragen werden. Dabei handelt es sich in der Regel
   um wörtliche Rede in Gesprächen, in der sich unter Umständen wichtige Informationen verstecken können, oder eine
   stimmungsvolle Einleitung zu verschiedenen Abschnitten.
 
-  \say{\lipsum[1-3]}
-
-  \item \textbf{Beschreibungen} \\
-  \textbf{Fett} gedruckte Passagen beinhalten Informationen und Beschreibungen über Orte an denen sich die
-  Abenteurer aufhalten. Hierzu zählt auch die Einrichtung eines Raums oder die Beschaffenheit eines Objektes.
-  In der Regel befinden sie sich am Beginn eines jeden Abschnittes oder Ortes, an dem sich die Gruppe aufhalten
-  kann. Allerdings finden sich solche Informationen unter anderem auch zu Objekten die es gilt aufzusammeln.
+  \say{Beispiel für ein Zitat}{Jemand, der das gesagt hat}
 
   \item \textcolor{RoyalRed}{\textbf{Interaktionen}} \\
   Pen and Paper lebt von der \textcolor{RoyalRed}{Interaktion} der Spieler mit ihrer Umwelt. Wann immer eine Probe auf ein Talent
-  möglich ist ist diese Information \textcolor{RoyalRed}{dunkelrot} markiert. Sie ermöglichen optionale Handlungsstränge oder
-  Lösungsstrategien, die den Spielern entgehen können, wenn sie nicht die entsprechenden Aktionen durchführen oder
-  sich für die entsprechende Option entscheiden.
+  möglich ist ist diese Information \textcolor{RoyalRed}{dunkelrot} markiert. Am Beispiel unten sieht man dabei auf welches Talent
+  gewürfelt werden kann (Lesen), und ob dieser Wurf beeinflusst ist. Die Zahl in Klammern ($-10$) wird dabei immer zum Talentwert
+  des Spielers dazuaddiert, ein negativer Wert bedeutet also, dass der Wurf erleichtert ist.
+
+  \begin{probe}{Lesen}{-10}
+  Bei erfolgreicher Probe geschieht, was hier steht.
+  \end{probe}
 
   \item \textcolor{RoyalBlue}{\textbf{Referenzen}} \\
   Zur einfachen Navigation sind an relevanten Stellen \textcolor{RoyalBlue}{Referenzen} eingebaut, mithilfe derer sich einfach und
@@ -36,6 +34,14 @@ Seiten \pageref{char-start}-\pageref{char-end}.
   \item \textcolor{violet}{\textbf{Charaktere}} \\
   Während der Handlung treffen die Spieler auf verschiedene \textcolor{violet}{Charaktere}. Referenzen zu Informationen über
   die jeweiligen Charaktere sind \textcolor{violet}{violett} hinterlegt. In den jeweiligen Abschnitten befinden sich
-  Hintergrundinformationen wie Motivationen und Verhaltensweisen, etc. die der Person Leben einhauchen sollen.
+  Hintergrundinformationen wie Motivationen und Verhaltensweisen, etc. die der Person Leben einhauchen sollen. Hier ein
+  Beispiel:
+
+  \begin{centering}
+    \noindent\makebox[\textwidth][c]{%
+    \begin{minipage}{80mm}
+      \charakter{Beispielcharakter} sieht aus dem Fenster.
+    \end{minipage}}
+  \end{centering}
 
 \end{itemize}

@@ -69,22 +69,6 @@
 \titlespacing{\section}{0pt}{0pt}{0pt}
 \titlespacing{\subsubsection}{15pt}{5pt}{0pt}
 
-
-% % MATH, PHYSICS
-% \usepackage{amsmath}
-% \usepackage{mathtools}
-% \usepackage{amssymb}
-% \usepackage{upgreek}
-% \usepackage{nicefrac}
-% \usepackage[load-configurations=abbreviations]{siunitx}
-% \sisetup{per-mode=fraction}
-% \sisetup{separate-uncertainty=true}
-% \sisetup{range-phrase=~bis~}
-% \sisetup{output-decimal-marker = {,}}
-% \DeclareSIUnit\sample{S}
-% \DeclareSIUnit\roothertz{\ensuremath{\sqrt{\text{\hertz}}}}
-% \usepackage[version=4]{mhchem}
-
 % TABLES, GRAPHICS
 \usepackage{booktabs}
 \usepackage[pdftex]{graphicx}
@@ -92,7 +76,9 @@
 \usepackage{subcaption}
 \usepackage{pgf}
 \usepackage{dpfloat}
-\usepackage{tcolorbox}
+\usepackage{listings}
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{breakable}
 
 \usepackage{tikz}
 \usetikzlibrary{calc}
@@ -122,31 +108,24 @@
 \newtotcounter{todocounter}
 \setcounter{todocounter}{0}
 
+\setcounter{tocdepth}{3}
+\setcounter{secnumdepth}{3}
+
+\usepackage{glossaries}
+
 % INCLUDES
 \input{include/config.tex}
 \input{include/sections.tex}
 \input{include/cmds.tex}
-
-\setcounter{tocdepth}{3}
-\setcounter{secnumdepth}{3}
+\input{sections/char-db.tex}
 
 % GLOSSARY
-\usepackage[automake]{glossaries}
 \newglossarystyle{list-custom}{%
 \glossarystyle{list}
-% \renewcommand*{\glossentry}[2]{%
-% 		\item[\color{RoyalRed}\MakeUppercase{\fontsize{12}{12}\selectfont\sffamily\underline{\glsentryname{##1}}}]
-% 		\glossentrydesc{##1}\vspace{1em}\newline\vspace{2em}\color{RoyalRed}
-% 		\textbf{Auftreten:}\color{black}\glspostdescription\space ##2
-% 		\glstarget{##1}{\textbf{##2}}
-% }
 \renewcommand*{\glossentry}[2]{%
 \item[\Large\color{RoyalRed}\glsentryitem{##1}%
 \glstarget{##1}{\glossentryname{##1}}]
-\glossentrydesc{##1}\vspace{1em}\newline\color{RoyalRed}\textbf{AUFTRETEN:}\color{black}\glspostdescription\space ##2}%
-}
+\glossentrydesc{##1}\vspace{1em}\newline\color{RoyalRed}\textbf{ERSCHEINT:}\color{black}\glspostdescription\space ##2}}
 
-
-\loadglsentries{sections/char}
-\makeglossary
+\makenoidxglossaries
 \setglossarystyle{list-custom}

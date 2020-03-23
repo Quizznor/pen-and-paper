@@ -1,18 +1,40 @@
  % typesetting
-% TODO: redefine this
-\newcommand{\say}[1]{
-\begin{centering}
-  \begin{tcolorbox}[hbox,breakatwhitespace=true]
-    \glqq\textit{#1}\grqq
-  \end{tcolorbox}
-\end{centering}
-}
-
 \renewcommand{\ref}[1]{\textcolor{RoyalBlue}{\ref{#1}}}
 \newcommand{\charakter}[1]{\textcolor{violet}{\gls{#1}}}
 
+\newcommand{\say}[2]{
+\vspace{5pt}
+\begin{centering}
+  \noindent\makebox[\textwidth][c]{%
+  \begin{minipage}{120mm}
+    \glqq\fontsize{12}{12}\textit{\textbf{#1}}\grqq\leavevmode\newline\normalsize\flushright- #2
+  \end{minipage}}
+\end{centering}
+\vspace{0pt}}
+
+\newcommand{\getdiff}[1]{%
+\ifthenelse{\equal{#1}{}}{}{%
+\ifthenelse{#1<0}{(#1)}{(#1)}}}
+
+\definecolor{BoxFrame}{RGB}{157,16, 45}
+\newtcolorbox{probe-box}[3][]{
+lower separated=false,
+colback=white,
+colframe=BoxFrame,
+fonttitle=\bfseries,
+colbacktitle=BoxFrame,
+coltitle=white,
+enhanced,
+attach boxed title to top left={yshift=-0.1in,xshift=0.15in},
+boxed title style={boxrule=0pt,colframe=white,},
+title=Probe auf #2 o.Ä. \ifthenelse{\equal{#3}{}}{}{%
+\ifthenelse{#3<0}{($#3$)}{($+#3$)}}}
+
+\newenvironment{probe}[2]{%
+\vspace{1em}\begin{probe-box}{#1}{#2}\vspace{6pt}}
+{\end{probe-box}\vspace{1em}}
 % draft
-\newcommand{\probe}[1]{\textcolor{RoyalRed}{#1}}
+
 \newcommand{\todo}[1]{\stepcounter{todocounter}{\color{blue}\textsuperscript{[to do: #1]}}}
 \newcommand{\rephrase}[1]{\stepcounter{todocounter}{\color{blue}#1\textsuperscript{\color{blue}[rephrase]}}}
 
