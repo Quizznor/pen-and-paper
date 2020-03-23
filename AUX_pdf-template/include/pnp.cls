@@ -26,7 +26,7 @@
 \usepackage[style=alphabetic]{biblatex}
 \usepackage{csquotes}
 
-% HEADERS
+% PAGESTYLES
 \usepackage{fancyhdr}
 \pagestyle{empty}
 
@@ -64,22 +64,26 @@
 \titleformat{\chapter}[display]{}{}{}{\Huge\bfseries}
 \titleformat{\section}[display]{}{}{}{\Large\bfseries}
 \titleformat{\subsection}[display]{}{}{}{\large\bfseries}
+\titleformat{\subsubsection}[display]{}{}{}{\large\bfseries}
+\titlespacing{\chapter}{0pt}{-1em}{2em}
+\titlespacing{\section}{0pt}{0pt}{0pt}
+\titlespacing{\subsubsection}{15pt}{5pt}{0pt}
 
 
-% MATH, PHYSICS
-\usepackage{amsmath}
-\usepackage{mathtools}
-\usepackage{amssymb}
-\usepackage{upgreek}
-\usepackage{nicefrac}
-\usepackage[load-configurations=abbreviations]{siunitx}
-\sisetup{per-mode=fraction}
-\sisetup{separate-uncertainty=true}
-\sisetup{range-phrase=~bis~}
-\sisetup{output-decimal-marker = {,}}
-\DeclareSIUnit\sample{S}
-\DeclareSIUnit\roothertz{\ensuremath{\sqrt{\text{\hertz}}}}
-\usepackage[version=4]{mhchem}
+% % MATH, PHYSICS
+% \usepackage{amsmath}
+% \usepackage{mathtools}
+% \usepackage{amssymb}
+% \usepackage{upgreek}
+% \usepackage{nicefrac}
+% \usepackage[load-configurations=abbreviations]{siunitx}
+% \sisetup{per-mode=fraction}
+% \sisetup{separate-uncertainty=true}
+% \sisetup{range-phrase=~bis~}
+% \sisetup{output-decimal-marker = {,}}
+% \DeclareSIUnit\sample{S}
+% \DeclareSIUnit\roothertz{\ensuremath{\sqrt{\text{\hertz}}}}
+% \usepackage[version=4]{mhchem}
 
 % TABLES, GRAPHICS
 \usepackage{booktabs}

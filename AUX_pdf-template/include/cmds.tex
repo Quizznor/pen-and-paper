@@ -1,7 +1,13 @@
  % typesetting
 % TODO: redefine this
-\newcommand{\gqm}[1]{\glqq#1\grqq}
-\
+\newcommand{\say}[1]{
+\begin{centering}
+  \begin{tcolorbox}[hbox,breakatwhitespace=true]
+    \glqq\textit{#1}\grqq
+  \end{tcolorbox}
+\end{centering}
+}
+
 \renewcommand{\ref}[1]{\textcolor{RoyalBlue}{\ref{#1}}}
 \newcommand{\charakter}[1]{\textcolor{violet}{\gls{#1}}}
 

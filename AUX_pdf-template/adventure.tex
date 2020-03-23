@@ -3,16 +3,10 @@
 \begin{document}
 
 	\FrontMatter
-
 	\input{include/titlepage.tex}
-
-	\chapter*{Anmerkungen für Spielleiter}
-
-	\input{sections/notes/notes-all.tex}
-	\input{sections/notes/notes-adv.tex}
+	\input{sections/info.tex}
 
 	\MainMatter
-
 	\input{include/storypage.tex}
 	\TableOfContents
 
@@ -21,6 +15,8 @@
 
 	\BackMatter
 	\input{include/charpage.tex}
+	\label{char-start}
 	\printglossary
+	\label{char-end}
 
 \end{document}
