@@ -1,6 +1,6 @@
  % typesetting
 \renewcommand{\ref}[1]{\textcolor{RoyalBlue}{\ref{#1}}}
-\newcommand{\charakter}[1]{\textcolor{violet}{\gls{#1}}}
+\newcommand{\charakter}[1]{\textcolor{violet}{\textbf{\gls{#1}}}}
 
 \newcommand{\say}[2]{
 \vspace{5pt}
@@ -16,13 +16,15 @@
 \ifthenelse{\equal{#1}{}}{}{%
 \ifthenelse{#1<0}{(#1)}{(#1)}}}
 
-\definecolor{BoxFrame}{RGB}{157,16, 45}
+\definecolor{RedBoxFrame}{RGB}{157,16, 45}
+\definecolor{BlueBoxFrame}{RGB}{0,70,202}
+
 \newtcolorbox{probe-box}[3][]{
 lower separated=false,
 colback=white,
-colframe=BoxFrame,
+colframe=RedBoxFrame,
 fonttitle=\bfseries,
-colbacktitle=BoxFrame,
+colbacktitle=RedBoxFrame,
 coltitle=white,
 enhanced,
 attach boxed title to top left={yshift=-0.1in,xshift=0.15in},
@@ -30,9 +32,26 @@ boxed title style={boxrule=0pt,colframe=white,},
 title=Probe auf #2 o.Ä. \ifthenelse{\equal{#3}{}}{}{%
 \ifthenelse{#3<0}{($#3$)}{($+#3$)}}}
 
+\newtcolorbox{ref-box}[2][]{
+lower separated=false,
+colback=white,
+colframe=BlueBoxFrame,
+fonttitle=\bfseries,
+colbacktitle=BlueBoxFrame,
+coltitle=white,
+enhanced,
+attach boxed title to top left={yshift=-0.1in,xshift=0.15in},
+boxed title style={boxrule=0pt,colframe=white,},
+title=Plot Ende für #2}
+
+\newenvironment{refbox}[2]{%
+\vspace{1em}\begin{ref-box}{#1}{\vspace{1em}#2}}
+{\vspace{5pt}\end{ref-box}\vspace{1em}}
+
 \newenvironment{probe}[2]{%
 \vspace{1em}\begin{probe-box}{#1}{#2}\vspace{6pt}}
 {\end{probe-box}\vspace{1em}}
+
 % draft
 
 \newcommand{\todo}[1]{\stepcounter{todocounter}{\color{blue}\textsuperscript{[to do: #1]}}}
