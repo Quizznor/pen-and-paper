@@ -12,7 +12,9 @@
 % \end{centering}
 % \vspace{0pt}}
 
-\newenvironment{\say}{}{}
+\newenvironment{say}{%
+\bfseries\itshape\begingroup\centering
+\begin{pbox}{\textwidth}}{\end{pbox}\\\endgroup}
 
 \newcommand{\getdiff}[1]{%
 \ifthenelse{\equal{#1}{}}{}{%
