@@ -6,6 +6,7 @@ when you and part of your crew awake from cryo-sleep unexpectedly in the middle 
 
 ---
 
+* STATUS: WORK IN PROGRESS
 * LANGUAGE: GERMAN
 * PLAYERS: 3-4
 * DURATION: TBD
