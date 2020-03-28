@@ -100,6 +100,7 @@
 		]{hyperref}
 \usepackage{import}
 \usepackage{ifthen}
+\usepackage{pbox}
 
 % DRAFT
 \usepackage{lipsum}

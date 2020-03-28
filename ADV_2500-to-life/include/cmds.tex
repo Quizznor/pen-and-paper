@@ -2,15 +2,8 @@
 \renewcommand{\ref}[1]{\textcolor{RoyalBlue}{\ref{#1}}}
 \newcommand{\charakter}[1]{\textcolor{violet}{\textbf{\gls{#1}}}}
 
-% \newcommand{\say}[2]{
-% \vspace{5pt}
-% \begin{centering}
-%   \noindent\makebox[\textwidth][c]{%
-%   \begin{minipage}{120mm}
-%     \glqq\fontsize{12}{12}\textit{\textbf{#1}}\grqq\leavevmode\newline\normalsize\flushright- #2
-%   \end{minipage}}
-% \end{centering}
-% \vspace{0pt}}
+\newenvironment{say}{%
+\itshape\begin{center}\begin{minipage}{0.85\textwidth}}{\end{minipage}\end{center}}
 
 \newcommand{\getdiff}[1]{%
 \ifthenelse{\equal{#1}{}}{}{%
