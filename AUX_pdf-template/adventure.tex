@@ -1,17 +1,35 @@
-\documentclass{include/pnp}
+\documentclass{00-include/pnp}
 
 \begin{document}
 
 	\FrontMatter
-	\input{include/titlepage.tex}
-	\input{sections/info.tex}
+	\input{00-include/titlepage.tex}
+
+	\label{info-start}
+	\chapter{Anmerkungen für Spielleiter}
+		\input{00-include/information}
+		\input{adventure_notes}
+	\label{info-end}
+
+	\TableOfContents
+	\label{tableofcontents}
 
 	\MainMatter
-	\input{include/storypage.tex}
-	\TableOfContents
-	\input{sections/story.tex}
+	\input{00-include/storypage.tex}
+
+	% Main Story
+	\foreach \c in {1,2,...,100}{%
+		\IfFileExists{02-story/\c}{%
+			\input{02-story/\c}{}
+		}%
+	}%
 
 	\BackMatter
-	\input{include/charpage.tex}
-	\input{sections/char.tex}
+	\input{00-include/charpage.tex}
+	
+	% Comment this out to hide the Beispiel glossary
+	\printnoidxglossary[type=Beispiel]
+	% Print other glossary types here
+	\printnoidxglossary[type=Personen]
+
 \end{document}

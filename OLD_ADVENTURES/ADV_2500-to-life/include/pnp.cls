@@ -112,6 +112,7 @@
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 
+\usepackage{datatool}
 \usepackage{glossaries}
 
 % INCLUDES
