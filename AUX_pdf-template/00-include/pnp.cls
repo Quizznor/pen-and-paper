@@ -115,7 +115,7 @@
 \usepackage[numberedsection=nameref,toc]{glossaries}
 
 % INCLUDES
-\input{00-include/config.tex}
+\input{adventure_config.tex}
 \input{00-include/sections.tex}
 \input{00-include/cmds.tex}
 \input{adventure_characters.tex}

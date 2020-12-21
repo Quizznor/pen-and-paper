@@ -1,19 +1,66 @@
 \begin{titlepage}
+
 	\begin{tikzpicture}[remember picture,overlay,every node/.style={inner sep=0,outer sep=0}]
+
+		\draw[color=gray]
+			($(current page.north west) + (\tpbinding + \tpborder-16mm, -\tpborder)$)
+			--
+			($(current page.north east) + (-\tpborder -\tpborderradius, -\tpborder)$)
+			arc (90:0:\tpborderradius)
+			--
+			($(current page.south east) + (-\tpborder, \tpbotborder)$)
+			--
+			($(current page.south west) + (\tpbinding + \tpborder + \tpborderradius-16mm, \tpbotborder)$)
+			arc (270:180:\tpborderradius)
+			--
+			($(current page.north west) + (\tpbinding + \tpborder-16mm, -\tpborder)$);
+
+		\node[anchor=north west] at ($(current page.north west) + (\tpbinding + \tpborder + \tplogooffset-16mm, -\tpborder -\tplogooffset)$) {\includegraphics[width=50mm]{01-img/header.pdf}};
+		\node[anchor=north east] at ($(current page.north east) + (-\tpbinding - \tpborder + \tplogooffset, -\tpborder -\tplogooffset)$)
+		{
+		};
 
 		\coordinate (pagetopcenter) at ($0.5*(current page.north west) + 0.5*(current page.north east) + (0.5*\tpbinding,0mm)$);
 		\coordinate (pagebotcenter) at ($0.5*(current page.south west) + 0.5*(current page.south east) + (0.5*\tpbinding,0mm)$);
 
-		\node[anchor=north] at ($(pagetopcenter) + (-8mm,-\tpborder -45mm)$)
+		\node[anchor=north] at ($(pagetopcenter) + (-27mm,-\tpborder -1.1cm)$)
 		{
 			\begin{minipage}{160mm}
-			\centering
-				\hspace{0pt}\\
-				{\scalebox{1.5}{\Huge\bfseries STORY}}\\
+			\renewcommand{\arraystretch}{1.5}
+				\centering\LARGE
+					\begin{tabular*}{0.1\textwidth}{@{\extracolsep{\fill}} ll}
+					Von & \textbf{\mainauthor} \\
+					und & \textbf{\coauthor}
+					\end{tabular*}
 			\end{minipage}
 		};
 
-		\node[anchor=north] at ($(pagetopcenter) + (-8mm,-\tpbotborder - 60mm)$)
+		\node[anchor=north] at ($(pagetopcenter) + (-8mm,-\tpborder -4.8cm)$)
+		{
+			\begin{minipage}{160mm}
+			\center
+			%	\hspace{0pt}\\
+			%	{\Large Von \bfseries \mainauthor}\\[5pt]
+			%	\ifthenelse{\equal{\coauthor}{}}
+			%	{}
+			%	{{\Large und \bfseries\coauthor}\\}
+			%	\vspace{3.5cm}
+				{\scalebox{1.5}{\Huge\bfseries \adventurename,}}\\
+			%	\vspace{2cm}
+			%	{\color{RoyalRed}\LARGE\bfseries EIN PEN AND PAPER ABENTEUER}\\[10pt]
+			\end{minipage}
+		};
+
+		\node[anchor=north] at ($(pagetopcenter) + (-8mm,-\tpborder -8cm)$)
+		{
+			\begin{minipage}{160mm}
+			\center
+			{\color{RoyalRed}\LARGE\bfseries EIN PEN AND PAPER ABENTEUER}\\[10pt]
+			\end{minipage}
+		};
+
+
+		\node[anchor=south] at ($(pagetopcenter) + (-8mm,\tpbotborder - 20.5cm)$)
 		{
 			\begin{minipage}{160mm}
 				\centering
@@ -21,14 +68,26 @@
 			\end{minipage}
 		};
 
-		\node[anchor=south] at ($(pagebotcenter) + (-16mm,\tpbotborder + 40mm)$)
+		\node[anchor=south] at ($(pagebotcenter) + (-8mm,\tpbotborder + 7cm)$)
 		{
-			\begin{minipage}{160mm}
-			\centering
-				\begin{advquote}[\Large - \quoteauthor]
-					\huge \quotetext
-				\end{advquote}
+			\begin{minipage}{1.42\textwidth}
+				\center
+				{\scalebox{1.5}{\Huge\textbf{Story}}}
 			\end{minipage}
 		};
+
+		\node[anchor=south] at ($(pagebotcenter) + (-8mm,\tpbotborder + 2cm)$)
+		{
+			\begin{minipage}{0.9\textwidth}
+			\center{
+			\begin{advquote}[\Large - \quoteauthor]
+			\LARGE\quotetext
+			\end{advquote}}
+			\end{minipage}
+		};
+
+		\node [anchor=west] at ($(current page.south west) + (\tpbinding + \tpborder + \tpborderradius, \tpbotborder - 0.5 * \tpborder)$) {\tpfont\large{Pen \& Paper}};
+
+		\node [anchor=east] at ($(current page.south east) + (-\tpborder - \tpborderradius, \tpbotborder - 0.5 * \tpborder)$) {\tpfont\large{\ruleseturl}};
 	\end{tikzpicture}
 \end{titlepage}
