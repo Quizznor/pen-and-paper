@@ -1,0 +1,48 @@
+\newcommand{\FrontMatter}
+{
+	\frontmatter%
+	\pagestyle{fancy-info}%
+	\titlespacing*{\chapter}{0pt}{0pt}{0pt}
+}
+
+\newcommand{\TableOfContents}
+{
+	% \newpage
+	% \begingroup \let\clearpage\relax
+	\tableofcontents
+	% \thispagestyle{fancy-info}
+	% \endgroup
+}
+
+
+\newcommand{\MainMatter}
+{
+	\mainmatter
+	\pagestyle{fancy-story}
+
+	\titlespacing*{\chapter}{0pt}{0pt}{2em}
+	\titleformat{\chapter}[display]
+  { \normalsize \huge  \color{black}}
+  {\flushright \normalsize \color{RoyalRed} \MakeUppercase {\fontsize{20}{20}\selectfont \sffamily  \chaptertitlename }
+	\hspace{1 ex} { \fontsize{22}{22}\selectfont \color{RoyalRed}\sffamily\thechapter}}
+	{10 pt}{\centering\huge\underline}
+
+	\titleformat{\section}[display]
+	{}{\flushright \fontsize{25}{25}\thesection}{-33pt}{\color{RoyalRed}\huge\bfseries\MakeUppercase}
+
+	\titleformat{\subsection}[display]
+	{}{\flushright \fontsize{17}{17}\thesubsection}{-25pt}{\color{RoyalRed}\Large\bfseries\MakeUppercase}
+
+	\titleformat{\subsubsection}[display]
+	{}{\flushright \fontsize{17}{17}\thesubsubsection}{-22pt}{\color{RoyalRed}\large\bfseries\MakeUppercase}
+}
+
+\newcommand{\BackMatter}
+{
+	\pagestyle{fancy-chars}
+	\titlespacing*{\section}{0pt}{0pt}{3em}
+	\titlespacing*{\subsection}{0pt}{0pt}{0pt}
+
+	\titleformat{\chapter}[display]{}{}{}{\Huge\bfseries}
+	\label{test}
+}

@@ -1,0 +1,107 @@
+% Commands special for this adventure
+
+\newcommand{\Pestilenz}[1][]{\textcolor{violet}{\textbf{Pestilenz #1}}}
+\newcommand{\Moral}[1][]{\textcolor{ForestGreen}{\textbf{Moral #1}}}
+
+% -----------------------------------
+
+% typesetting
+\newcommand{\then}{$\rightarrow\;$}
+\newcommand{\page}[1]{\textcolor{RoyalBlue}{\pageref{#1}}}
+\newcommand{\charakter}[1]{\textcolor{violet}{\textbf{\gls{#1}}}}
+
+\newenvironment{say}{%
+\itshape\begin{center}\begin{minipage}{0.85\textwidth}}{\end{minipage}\end{center}}
+
+\newcommand{\getdiff}[1]{%
+\ifthenelse{\equal{#1}{}}{}{%
+\ifthenelse{#1<0}{(#1)}{(#1)}}}
+
+\definecolor{RedBoxFrame}{RGB}{157,16, 45}
+\definecolor{BlueBoxFrame}{RGB}{0,70,202}
+
+\newtcolorbox{probe-box}[3][]{
+lower separated=false,
+colback=white,
+colframe=RedBoxFrame,
+fonttitle=\bfseries,
+colbacktitle=RedBoxFrame,
+coltitle=white,
+enhanced,
+attach boxed title to top left={yshift=-0.1in,xshift=0.15in},
+boxed title style={boxrule=0pt,colframe=white,},
+title=Probe auf #2 o.Ä. \ifthenelse{\equal{#3}{}}{}{%
+\ifthenelse{#3<0}{($#3$)}{($+#3$)}}}
+
+\newtcolorbox{ref-box}[2][]{
+lower separated=false,
+colback=white,
+colframe=BlueBoxFrame,
+fonttitle=\bfseries,
+colbacktitle=BlueBoxFrame,
+coltitle=white,
+enhanced,
+attach boxed title to top left={yshift=-0.1in,xshift=0.15in},
+boxed title style={boxrule=0pt,colframe=white,},
+title=Plot Ende für #2}
+
+\newenvironment{refbox}[2]{%
+\vspace{1em}\begin{ref-box}{#1}{\vspace{1em}#2}}
+{\vspace{5pt}\end{ref-box}\vspace{1em}}
+
+\newenvironment{probe}[2]{%
+\vspace{1em}\begin{probe-box}{#1}{#2}\vspace{6pt}}
+{\end{probe-box}\vspace{1em}}
+
+% draft
+
+\newcommand{\todo}[1]{\stepcounter{todocounter}{\color{blue}\textsuperscript{[to do: #1]}}}
+\newcommand{\rephrase}[1]{\stepcounter{todocounter}{\color{blue}#1\textsuperscript{\color{blue}[rephrase]}}}
+
+% storypage quote
+\makeatletter
+\def\advquote{%
+    \@ifnextchar[{\advquote@i}{\advquote@i[]}%]
+           }%
+\def\advquote@i[#1]{%
+    \def\tempa{#1}%
+    \@ifnextchar[{\advquote@ii}{\advquote@ii[]}%]
+                 }%
+\def\advquote@ii[#1]{%
+    \def\tempb{#1}%
+    \@ifnextchar[{\advquote@iii}{\advquote@iii[]}%]
+                      }%
+\def\advquote@iii[#1]{%
+    \def\tempc{#1}%
+    \vspace{1em}%
+    \noindent%
+    \begin{list}{}{%
+         \setlength{\leftmargin}{0.1\textwidth}%
+         \setlength{\rightmargin}{0.1\textwidth}%
+                  }%
+         \item[]%
+         \begin{picture}(0,0)%
+         \put(-15,-5){\makebox(0,0){\scalebox{5}{\textcolor{RoyalRed}{``}}}}%
+         \end{picture}%
+         \begingroup\itshape}%
+
+ \def\endadvquote{%
+ \endgroup\par%
+ \makebox[0pt][l]{%
+ \hspace{0.8\textwidth}%
+ \begin{picture}(0,0)(0,0)%
+ \put(\quotelength,5){\makebox(0,0){%
+ \scalebox{5}{\color{RoyalRed}''}}}%
+ \end{picture}}%
+
+ \ifx\tempa\empty%
+ \else%
+    \ifx\tempc\empty%
+       \hfill\\\mbox{}\hfill\vspace{0mm}\tempa \emph{\tempb}%
+   \else%
+       \hfill\\\mbox{}\hfill\vspace{0mm}\tempa \emph{\tempb}\ \tempc%
+   \fi\fi\par%
+   \vspace{0.5em}%
+ \end{list}%
+ }%
+ \makeatother
