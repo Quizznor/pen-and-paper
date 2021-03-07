@@ -1,17 +1,19 @@
-% typesetting
+% TYPESETTING WORKFLOW
+
 \newcommand{\then}{$\rightarrow\;$}
 \newcommand{\page}[1]{\textcolor{RoyalBlue}{\pageref{#1}}}
 \newcommand{\charakter}[1]{\textcolor{violet}{\textbf{\gls{#1}}}}
-
-\newenvironment{say}{%
-\itshape\begin{center}\begin{minipage}{0.85\textwidth}}{\end{minipage}\end{center}}
-
 \newcommand{\getdiff}[1]{%
 \ifthenelse{\equal{#1}{}}{}{%
 \ifthenelse{#1<0}{(#1)}{(#1)}}}
 
+% COLORS
+
 \definecolor{RedBoxFrame}{RGB}{157,16, 45}
 \definecolor{BlueBoxFrame}{RGB}{0,70,202}
+
+
+% ACTIONS
 
 \newtcolorbox{probe-box}[3][]{
 lower separated=false,
@@ -26,6 +28,32 @@ boxed title style={boxrule=0pt,colframe=white,},
 title=Probe auf #2 o.Ä. \ifthenelse{\equal{#3}{}}{}{%
 \ifthenelse{#3<0}{($#3$)}{($+#3$)}}}
 
+\newenvironment{probe}[2]{%
+\begin{probe-box}{#1}{#2}\vspace{6pt}}
+{\end{probe-box}\vspace{1em}}
+
+
+% SPEECH
+
+\newtcolorbox{say-box}[2][]{
+lower separated=false,
+colback=white,
+colframe=BlueBoxFrame,
+fonttitle=\bfseries,
+colbacktitle=BlueBoxFrame,
+coltitle=white,
+enhanced,
+attach boxed title to top left={yshift=-0.1in,xshift=0.15in},
+boxed title style={boxrule=0pt,colframe=white,},
+title= #2: }
+
+\newenvironment{say}[2]{%
+\begin{say-box}{#1}{#2}\vspace{6pt}}
+{\end{say-box}\vspace{1em}}
+
+
+% REFERENCES
+
 \newtcolorbox{ref-box}[2][]{
 lower separated=false,
 colback=white,
@@ -39,14 +67,11 @@ boxed title style={boxrule=0pt,colframe=white,},
 title=Plot Ende für #2}
 
 \newenvironment{refbox}[2]{%
-\vspace{1em}\begin{ref-box}{#1}{\vspace{1em}#2}}
+\begin{ref-box}{#1}{\vspace{1em}#2}}
 {\vspace{5pt}\end{ref-box}\vspace{1em}}
 
-\newenvironment{probe}[2]{%
-\vspace{1em}\begin{probe-box}{#1}{#2}\vspace{6pt}}
-{\end{probe-box}\vspace{1em}}
 
-% draft
+% TITLEPAGE STUFF
 
 \newcommand{\todo}[1]{\stepcounter{todocounter}{\color{blue}\textsuperscript{[to do: #1]}}}
 \newcommand{\rephrase}[1]{\stepcounter{todocounter}{\color{blue}#1\textsuperscript{\color{blue}[rephrase]}}}
