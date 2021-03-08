@@ -1,26 +1,105 @@
-% Commands special for this adventure
+% TYPESETTING WORKFLOW
 
-\newcommand{\Pestilenz}[1][]{\textcolor{violet}{\textbf{Pestilenz #1}}}
-\newcommand{\Moral}[1][]{\textcolor{ForestGreen}{\textbf{Moral #1}}}
-
-% -----------------------------------
-
-% typesetting
 \newcommand{\then}{$\rightarrow\;$}
-\newcommand{\page}[1]{\textcolor{RoyalBlue}{\pageref{#1}}}
+\newcommand{\page}[1]{\textcolor{OrangeBoxFrame}{\pageref{#1}}}
 \newcommand{\charakter}[1]{\textcolor{violet}{\textbf{\gls{#1}}}}
-
-\newenvironment{say}{%
-\itshape\begin{center}\begin{minipage}{0.85\textwidth}}{\end{minipage}\end{center}}
-
 \newcommand{\getdiff}[1]{%
 \ifthenelse{\equal{#1}{}}{}{%
 \ifthenelse{#1<0}{(#1)}{(#1)}}}
 
+% COLORS
+
 \definecolor{RedBoxFrame}{RGB}{157,16, 45}
 \definecolor{BlueBoxFrame}{RGB}{0,70,202}
+\definecolor{OrangeBoxFrame}{RGB}{255,103,0}
+\definecolor{BrownBoxFrame}{RGB}{110,44,0}
 
-\newtcolorbox{probe-box}[3][]{
+
+% INFO
+
+\newtcolorbox{infobox}[1][]{
+lower separated=false,
+colback=white,
+colframe=OrangeBoxFrame,
+fonttitle=\bfseries,
+colbacktitle=OrangeBoxFrame,
+coltitle=white,
+enhanced,
+frame hidden,
+borderline={1.5pt}{0pt}{OrangeBoxFrame,dashed},
+attach boxed title to top left={yshift=-0.1in,xshift=0.15in},
+boxed title style={boxrule=0pt,colframe=white,},
+title=Information für Spielleiter}
+
+\newenvironment{info-box}[1]{%
+\begin{infobox}{#1}\vspace{6pt}}
+{\end{infobox}\vspace{1em}}
+
+
+% REFERENCES
+
+\newtcolorbox{refbox}[2][]{
+lower separated=false,
+colback=white,
+frame hidden,
+borderline={1.5pt}{0pt}{OrangeBoxFrame,dashed},
+colframe=OrangeBoxFrame,
+fonttitle=\bfseries,
+colbacktitle=OrangeBoxFrame,
+coltitle=white,
+enhanced,
+attach boxed title to top left={yshift=-0.1in,xshift=0.15in},
+boxed title style={boxrule=0pt,colframe=white,},
+title=Plot Ende für #2}
+
+\newenvironment{ref-box}[2]{%
+\begin{refbox}{#1}{\vspace{1em}#2}}
+{\vspace{5pt}\end{refbox}\vspace{1em}}
+
+
+% DESCRIPTIONS
+
+\newtcolorbox{placebox}[2][]{
+lower separated=false,
+colback=white,
+colframe=BrownBoxFrame,
+fonttitle=\bfseries,
+colbacktitle=BrownBoxFrame,
+coltitle=white,
+enhanced,
+attach boxed title to top left={yshift=-0.1in,xshift=0.15in},
+boxed title style={boxrule=0pt,colframe=white,},
+title=Ortsbeschreibung #2}
+
+\newenvironment{place-box}[2]{%
+\begin{placebox}{#1}{#2}\vspace{6pt}}
+{\end{placebox}\vspace{1em}}
+
+
+% CHARACTERS
+
+\newtcolorbox{charbox}[2][]{
+lower separated=false,
+colback=white,
+colframe=violet,
+fonttitle=\bfseries,
+colbacktitle=violet,
+coltitle=white,
+enhanced,
+frame hidden,
+borderline={1.5pt}{0pt}{violet,dashed},
+attach boxed title to top left={yshift=-0.1in,xshift=0.15in},
+boxed title style={boxrule=0pt,colframe=white,},
+title=#2}
+
+\newenvironment{char-box}[2]{%
+\begin{charbox}{#1}{#2}}
+{\end{charbox}}
+
+
+% ACTIONS
+
+\newtcolorbox{probebox}[3][]{
 lower separated=false,
 colback=white,
 colframe=RedBoxFrame,
@@ -33,7 +112,13 @@ boxed title style={boxrule=0pt,colframe=white,},
 title=Probe auf #2 o.Ä. \ifthenelse{\equal{#3}{}}{}{%
 \ifthenelse{#3<0}{($#3$)}{($+#3$)}}}
 
-\newtcolorbox{ref-box}[2][]{
+\newenvironment{probe-box}[2]{%
+\begin{probebox}{#1}{#2}\vspace{6pt}}
+{\end{probebox}\vspace{1em}}
+
+% SPEECH
+
+\newtcolorbox{saybox}[2][]{
 lower separated=false,
 colback=white,
 colframe=BlueBoxFrame,
@@ -43,17 +128,15 @@ coltitle=white,
 enhanced,
 attach boxed title to top left={yshift=-0.1in,xshift=0.15in},
 boxed title style={boxrule=0pt,colframe=white,},
-title=Plot Ende für #2}
+title= #2: }
 
-\newenvironment{refbox}[2]{%
-\vspace{1em}\begin{ref-box}{#1}{\vspace{1em}#2}}
-{\vspace{5pt}\end{ref-box}\vspace{1em}}
+\newenvironment{say-box}[2]{%
+\begin{saybox}{#1}{#2}\vspace{6pt}}
+{\end{saybox}\vspace{1em}}
 
-\newenvironment{probe}[2]{%
-\vspace{1em}\begin{probe-box}{#1}{#2}\vspace{6pt}}
-{\end{probe-box}\vspace{1em}}
 
-% draft
+
+% TITLEPAGE STUFF
 
 \newcommand{\todo}[1]{\stepcounter{todocounter}{\color{blue}\textsuperscript{[to do: #1]}}}
 \newcommand{\rephrase}[1]{\stepcounter{todocounter}{\color{blue}#1\textsuperscript{\color{blue}[rephrase]}}}

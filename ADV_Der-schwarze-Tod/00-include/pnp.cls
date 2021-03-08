@@ -54,7 +54,7 @@
 \renewcommand{\headrulewidth}{0.6pt}
 
 % COLORS
-\usepackage[dvipsnames]{xcolor}
+\usepackage{color}
 \definecolor{RoyalRed}{RGB}{157,16, 45}
 \definecolor{RoyalBlue}{RGB}{0,70,202}
 
@@ -112,6 +112,7 @@
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 
+\usepackage{landscape}
 \usepackage[numberedsection=nameref,toc]{glossaries}
 
 % INCLUDES
@@ -124,9 +125,9 @@
 \newglossarystyle{list-custom}{%
 \glossarystyle{list}
 \renewcommand*{\glossentry}[2]{%
-\item[\Large\color{RoyalRed}\glsentryitem{##1}%
+\item[\Large\color{violet}\glsentryitem{##1}%
 \glstarget{##1}{\glossentryname{##1}}]
-\glossentrydesc{##1}\vspace{1em}\newline\color{RoyalRed}\textbf{ERSCHEINT:}\color{black}\glspostdescription\space ##2}}
+\glossentrydesc{##1}\vspace{1em}\newline\color{violet}\textbf{ERSCHEINT:}\color{black}\glspostdescription\space ##2}}
 
 \makenoidxglossaries
 \setglossarystyle{list-custom}
