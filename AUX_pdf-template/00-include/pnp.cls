@@ -124,9 +124,9 @@
 \newglossarystyle{list-custom}{%
 \glossarystyle{list}
 \renewcommand*{\glossentry}[2]{%
-\item[\Large\color{RoyalRed}\glsentryitem{##1}%
+\item[\Large\color{violet}\glsentryitem{##1}%
 \glstarget{##1}{\glossentryname{##1}}]
-\glossentrydesc{##1}\vspace{1em}\newline\color{RoyalRed}\textbf{ERSCHEINT:}\color{black}\glspostdescription\space ##2}}
+\glossentrydesc{##1}\vspace{1em}\newline\color{violet}\textbf{ERSCHEINT:}\color{black}\glspostdescription\space ##2}}
 
 \makenoidxglossaries
 \setglossarystyle{list-custom}
