@@ -112,7 +112,7 @@
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 
-\usepackage{landscape}
+\usepackage{lscape}
 \usepackage[numberedsection=nameref,toc]{glossaries}
 
 % INCLUDES
