@@ -1,4 +1,4 @@
-\ProvidesClass{include/pnp}
+\ProvidesClass{00-include/pnp}
 \LoadClass[11pt,a4paper,titlepage,openany]{scrbook}
 
 % ENCODING
@@ -34,23 +34,23 @@
 \fancyhf{}%
 \pagenumbering{Roman}%
 \fancyfoot[R]{\thepage}%
-\fancyhead[L]{\adventurename$\;$- Informationen\hfill\includegraphics[width=3mm]{img/quill.png}}
+\fancyhead[L]{\adventurename$\;$- Informationen\hfill\includegraphics[width=3mm]{01-img/quill.png}}
 }
 
 \fancypagestyle{fancy-story}{%
 \fancyhf{}%
 \fancyfoot[R]{\thepage}%
-\fancyhead[L]{\adventurename$\;$- Story\hfill\includegraphics[width=3mm]{img/quill.png}}
+\fancyhead[L]{\adventurename$\;$- Story\hfill\includegraphics[width=3mm]{01-img/quill.png}}
 }
 
 \fancypagestyle{fancy-chars}{%
 \fancyhf{}%
 \fancyfoot[R]{\thepage}%
-\fancyhead[L]{\adventurename$\;$- Charaktere\hfill\includegraphics[width=3mm]{img/quill.png}}
+\fancyhead[L]{\adventurename$\;$- Charaktere\hfill\includegraphics[width=3mm]{01-img/quill.png}}
 }
 
 \setlength\headheight{26pt}
-\rhead{\includegraphics[height=4mm]{img/quill.png}}
+\rhead{\includegraphics[height=4mm]{01-img/quill.png}}
 \renewcommand{\headrulewidth}{0.6pt}
 
 % COLORS
@@ -112,22 +112,22 @@
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 
-\usepackage{datatool}
-\usepackage{glossaries}
+\usepackage{lscape}
+\usepackage[numberedsection=nameref,toc]{glossaries}
 
 % INCLUDES
-\input{include/config.tex}
-\input{include/sections.tex}
-\input{include/cmds.tex}
-\input{sections/char-db.tex}
+\input{adventure_config.tex}
+\input{00-include/sections.tex}
+\input{00-include/cmds.tex}
+\input{adventure_characters.tex}
 
 % GLOSSARY
 \newglossarystyle{list-custom}{%
-\glossarystyle{list}
+%\glossarystyle{list}
 \renewcommand*{\glossentry}[2]{%
-\item[\Large\color{RoyalRed}\glsentryitem{##1}%
+\item[\Large\color{violet}\glsentryitem{##1}%
 \glstarget{##1}{\glossentryname{##1}}]
-\glossentrydesc{##1}\vspace{1em}\newline\color{RoyalRed}\textbf{ERSCHEINT:}\color{black}\glspostdescription\space ##2}}
+\glossentrydesc{##1}\vspace{1em}\newline\color{violet}\textbf{ERSCHEINT:}\color{black}\glspostdescription\space ##2}}
 
 \makenoidxglossaries
 \setglossarystyle{list-custom}

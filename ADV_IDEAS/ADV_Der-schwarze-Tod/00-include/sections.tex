@@ -7,11 +7,11 @@
 
 \newcommand{\TableOfContents}
 {
-	\newpage
-	\begingroup \let\clearpage\relax
+	% \newpage
+	% \begingroup \let\clearpage\relax
 	\tableofcontents
-	\thispagestyle{fancy-story}
-	\endgroup
+	% \thispagestyle{fancy-info}
+	% \endgroup
 }
 
 
@@ -28,7 +28,7 @@
 	{10 pt}{\centering\huge\underline}
 
 	\titleformat{\section}[display]
-	{}{\flushright \fontsize{25}{25}\thesection}{-33pt}{\color{RoyalRed}\huge\bfseries\MakeUppercase}
+	{}{\flushright \fontsize{25}{25}\thesection}{-33pt}{\vspace{0.6cm}\color{RoyalRed}\huge\bfseries\MakeUppercase}
 
 	\titleformat{\subsection}[display]
 	{}{\flushright \fontsize{17}{17}\thesubsection}{-25pt}{\color{RoyalRed}\Large\bfseries\MakeUppercase}
@@ -44,4 +44,5 @@
 	\titlespacing*{\subsection}{0pt}{0pt}{0pt}
 
 	\titleformat{\chapter}[display]{}{}{}{\Huge\bfseries}
+	\label{test}
 }

@@ -112,6 +112,7 @@
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
 
+\usepackage{lscape}
 \usepackage[numberedsection=nameref,toc]{glossaries}
 
 % INCLUDES
@@ -122,7 +123,7 @@
 
 % GLOSSARY
 \newglossarystyle{list-custom}{%
-\glossarystyle{list}
+%\glossarystyle{list}
 \renewcommand*{\glossentry}[2]{%
 \item[\Large\color{violet}\glsentryitem{##1}%
 \glstarget{##1}{\glossentryname{##1}}]
